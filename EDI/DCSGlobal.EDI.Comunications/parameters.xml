@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<parameter>
+  <vendor name="AVAILITY">
+    <wsdl>https://qa-apps.availity.com/availity/B2BHCTransactionServlet</wsdl>
+    <username></username>
+    <password></password>
+    <apiKey></apiKey>
+    <ContentType>application/x-www-form-urlencoded</ContentType>
+    <Method>POST</Method>
+    <ServiceTimeOut>120000</ServiceTimeOut>
+    <TimeToWait>150000</TimeToWait>
+    <LogToREQRES>0</LogToREQRES>
+  </vendor>
+  <vendor name="IVANS">
+    <wsdl>https://eligibilityone.abilitynetwork.com/EligibilityOne.asmx</wsdl>
+    <username>8DC00005</username>
+    <password>DC$Gl0bal//2013</password>
+    <apiKey></apiKey>
+    <ContentType></ContentType>
+    <Method>POST</Method>
+    <ServiceTimeOut>120000</ServiceTimeOut>
+    <TimeToWait>150000</TimeToWait>
+    <LogToREQRES>0</LogToREQRES>
+    <ClientId>f9e52687-a2e0-4d9c-8591-59516c9fd026</ClientId>
+    <PreAuthenticate>true</PreAuthenticate>
+  </vendor>
+  <vendor name="POST-N-TRACK">
+    <wsdl>https://realtime1.post-n-track.com/realtime/request_x12.aspx</wsdl>
+    <username>PNTUserName</username>
+    <password>PNTPassword</password>
+    <apiKey></apiKey>
+    <ContentType>application/x-www-form-urlencoded</ContentType>
+    <Method>POST</Method>
+    <ServiceTimeOut>120000</ServiceTimeOut>
+    <TimeToWait>150000</TimeToWait>
+    <LogToREQRES>0</LogToREQRES>
+  </vendor>
+  <vendor name="MEDDATA">
+    <wsdl>https://services.meddatahealth.com/submissionportal/submissionportal.asmx?wsdl</wsdl>
+    <username>2019275</username>
+    <password>fT~H31]m</password>
+    <apiKey></apiKey>
+    <ContentType></ContentType>
+    <Method></Method>
+    <ServiceTimeOut>120000</ServiceTimeOut>
+    <TimeToWait>150000</TimeToWait>
+    <LogToREQRES>0</LogToREQRES>
+    <RequestFormat>FlatXml</RequestFormat>
+    <ResponseFormat>Edi</ResponseFormat>
+  </vendor>
+  <vendor name="VISIONSHARE">
+    <VS_PROXY_PORT>80</VS_PROXY_PORT>
+    <VS_PROXY_SERVER></VS_PROXY_SERVER>
+    <VS_HOST_ADDRESS>204.11.46.227</VS_HOST_ADDRESS>
+    <VS_SES_PORT>4090</VS_SES_PORT>
+    <username>dcsgwpnt</username>
+    <password>Dx9m3fHvy</password>
+    <connection>SYNC_WELLPOINT</connection>
+    <VS_SES_PORT1>4091</VS_SES_PORT1>
+    <username1>dcsghets</username1>
+    <password1>dcsg821z</password1>
+    <connection1>SYNC_HETS_PROD</connection1>
+  </vendor>
+  <vendor name="DORADO">
+    <wsdl>https://api.doradosystems.com/rt/validate?api_key=yccQdicTcceNbLQbPesciCrKH</wsdl>
+    <username></username>
+    <password></password>
+    <apiKey></apiKey>
+    <ContentType>application/x-www-form-urlencoded</ContentType>
+    <Method>POST</Method>
+    <ServiceTimeOut>120000</ServiceTimeOut>
+    <TimeToWait>150000</TimeToWait>
+    <LogToREQRES>0</LogToREQRES>
+  </vendor>
+  <vendor name="EMDEON">
+    <wsdl>https://ra.emdeon.com/astwebservice/aws.asmx</wsdl>
+    <username>PMNADCSGL</username>
+    <password>TMURwvb3</password>
+    <apiKey></apiKey>
+    <ContentType>application/x-www-form-urlencoded</ContentType>
+    <Method>POST</Method>
+    <ServiceTimeOut>240000</ServiceTimeOut>
+    <TimeToWait>150000</TimeToWait>
+    <LogToREQRES>0</LogToREQRES>
+  </vendor>
+  
+  <vendor name="NEBRASKA">
+    <wsdl>https://COREWEB-DHHS.NE.GOV:10800/soap</wsdl>
+    <ContentType>text/xml;charset="utf-8"</ContentType>
+    <Accept>text/xml</Accept>
+    <Method>POST</Method>
+    <ServiceTimeOut>600000</ServiceTimeOut>
+    <TimeToWait>150000</TimeToWait>
+    <LogToREQRES>0</LogToREQRES>
+  </vendor>
+  <vendor name="TXMCD">
+    <wsdl>http://edi-web.tmhp.com/TMHP/Request</wsdl>
+    <ContentType>text/xml;charset="utf-8"</ContentType>
+    <Accept>application/soap+xml</Accept>
+    <Method>POST</Method>
+    <ServiceTimeOut>600000</ServiceTimeOut>
+    <TimeToWait>150000</TimeToWait>
+    <LogToREQRES>0</LogToREQRES>
+  </vendor>
+
+  <vendor name="DCSTXMCD">
+    <wsdl>http://10.34.1.206:9900/TxMcd.asmx</wsdl>
+    <ContentType>text/xml;charset="utf-8"</ContentType>
+    <Accept>application/soap+xml</Accept>
+    <Method>POST</Method>
+    <ServiceTimeOut>600000</ServiceTimeOut>
+    <TimeToWait>150000</TimeToWait>
+    <LogToREQRES>0</LogToREQRES>
+  </vendor>  
+  <vendor name="PARAMOUNTEDI">
+    <wsdl>https://phcedi.promedica.org:50043/x12/realtime/soap?request_type=X12_270_Request_005010X279A1</wsdl>
+    <username></username>
+    <password></password>
+    <apiKey></apiKey>
+    <ContentType>text/xml;charset="utf-8"</ContentType>
+    <Accept>text/xml</Accept>
+    <Method>POST</Method>
+    <ServiceTimeOut>600000</ServiceTimeOut>
+    <TimeToWait>150000</TimeToWait>
+    <LogToREQRES>0</LogToREQRES>
+  </vendor>
+</parameter>

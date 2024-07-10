@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCSGlobal.VoiceRecorder.Audio", "DCSGlobal.VoiceRecorder.Audio\DCSGlobal.VoiceRecorder.Audio.csproj", "{1A2499E2-1FCD-497C-A904-4254A7E744D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCSGlobal.VoiceRecorder.Test", "DCSGlobal.VoiceRecorder.Test\DCSGlobal.VoiceRecorder.Test.csproj", "{E1AA523A-4487-4319-9396-6E0978B22AD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCSGlobal.VoiceRecorder.Core", "DCSGlobal.VoiceRecorder.Core\DCSGlobal.VoiceRecorder.Core.csproj", "{5B180777-1374-4B72-ACBF-6DFAE8815191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCSGlobal.VoiceRecorder.HookDetector", "DCSGlobal.VoiceRecorder.HookDetector\DCSGlobal.VoiceRecorder.HookDetector.csproj", "{93147F00-DFD4-46FF-90F3-589D3894E553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCSGlobal.Recorder", "DCSGlobal.Recorder\DCSGlobal.Recorder.csproj", "{88549F7D-5A98-487D-9251-9452FBC88B7C}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 6
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DCSGlobal.VoiceRecorder.Audio\\DCSGlobal.VoiceRecorder.Audio.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = DCSGlobal.VoiceRecorder.Audio\\
+		SccProjectUniqueName2 = DCSGlobal.VoiceRecorder.Core\\DCSGlobal.VoiceRecorder.Core.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = DCSGlobal.VoiceRecorder.Core\\
+		SccProjectUniqueName3 = DCSGlobal.VoiceRecorder.HookDetector\\DCSGlobal.VoiceRecorder.HookDetector.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = DCSGlobal.VoiceRecorder.HookDetector\\
+		SccProjectUniqueName4 = DCSGlobal.VoiceRecorder.Test\\DCSGlobal.VoiceRecorder.Test.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = DCSGlobal.VoiceRecorder.Test\\
+		SccProjectUniqueName5 = DCSGlobal.Recorder\\DCSGlobal.Recorder.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = DCSGlobal.Recorder\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A2499E2-1FCD-497C-A904-4254A7E744D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A2499E2-1FCD-497C-A904-4254A7E744D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A2499E2-1FCD-497C-A904-4254A7E744D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A2499E2-1FCD-497C-A904-4254A7E744D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1AA523A-4487-4319-9396-6E0978B22AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1AA523A-4487-4319-9396-6E0978B22AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1AA523A-4487-4319-9396-6E0978B22AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1AA523A-4487-4319-9396-6E0978B22AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B180777-1374-4B72-ACBF-6DFAE8815191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B180777-1374-4B72-ACBF-6DFAE8815191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B180777-1374-4B72-ACBF-6DFAE8815191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B180777-1374-4B72-ACBF-6DFAE8815191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93147F00-DFD4-46FF-90F3-589D3894E553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93147F00-DFD4-46FF-90F3-589D3894E553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93147F00-DFD4-46FF-90F3-589D3894E553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93147F00-DFD4-46FF-90F3-589D3894E553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88549F7D-5A98-487D-9251-9452FBC88B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88549F7D-5A98-487D-9251-9452FBC88B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88549F7D-5A98-487D-9251-9452FBC88B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88549F7D-5A98-487D-9251-9452FBC88B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

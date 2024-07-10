@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DCSGlobal.BusinessRules.Logging.logExecption">
+    <Position X="0.75" Y="1.25" Width="4.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAQAAAAAAgCAAgAAAACAAAAAAACA=</HashCode>
+      <FileName>logExecption.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.BusinessRules.Logging.Email">
+    <Position X="6.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAAAAAAQAAAAAAAIAAACRAQICAAgAAAACAAAgAAgAI=</HashCode>
+      <FileName>Email.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

@@ -1,0 +1,13 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Manual_test_app" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Persist Security Info=False;User ID=al60_seton_lite_developer_user;Password=AYImyvmKCd14tMw9timGAoTVdCmIKdP6yDSSKymY7t0um+lShaMStpGRtDcLlS7O;Initial Catalog=al60_seton_lite_developer;Data Source=10.1.1.120;pooling=false;connection Timeout=180
+</Value>
+    </Setting>
+    <Setting Name="ALLoginCommandString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">usp_secure_check_valid_user_al</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

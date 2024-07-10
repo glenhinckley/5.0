@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63FDA178-F4E1-4CC1-B1C6-D63A729380B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DCSGlobal.EDI.Comunications</RootNamespace>
+    <AssemblyName>DCSGlobal.EDI.Comunications</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlaskaMedicaid.cs" />
+    <Compile Include="AlbamaMedicaid.cs" />
+    <Compile Include="AlbamaMedicaidEx.cs" />
+    <Compile Include="AlbamaMedicaidProxy.cs" />
+    <Compile Include="Anthem.cs" />
+    <Compile Include="ArizonaMedicaid.cs" />
+    <Compile Include="ArkansasMedicaid.cs" />
+    <Compile Include="ArkansasMedicaidEx.cs" />
+    <Compile Include="ArkansasMedicaidProxy.cs" />
+    <Compile Include="AvailityEx.cs" />
+    <Compile Include="AvailitySoap.cs" />
+    <Compile Include="BCBSAlbama.cs" />
+    <Compile Include="BCBSAlbamaProxy.cs" />
+    <Compile Include="BCBSArizona.cs" />
+    <Compile Include="BCBSLouisiana.cs" />
+    <Compile Include="BCBSNorthCarolinaMedicaid.cs" />
+    <Compile Include="BCNebraska.cs" />
+    <Compile Include="BcRhodeIsland.cs" />
+    <Compile Include="BCWestVerginia.cs" />
+    <Compile Include="BCWestVerginiaDCSWebService.cs" />
+    <Compile Include="Centene.cs" />
+    <Compile Include="config.cs" />
+    <Compile Include="AVAILITY.cs" />
+    <Compile Include="ConnecticutMedicaidEx.cs" />
+    <Compile Include="DEMCDWrapper.cs" />
+    <Compile Include="DoradoSystemsEx.cs" />
+    <Compile Include="EDIGetResponse_v2.cs" />
+    <Compile Include="EmdeonAssistantProxy.cs" />
+    <Compile Include="EmdeonEx.cs" />
+    <Compile Include="EmdeonOnly.cs" />
+    <Compile Include="FloridaDCSWebService.cs" />
+    <Compile Include="GeorgiaMedicaidEx.cs" />
+    <Compile Include="HarvardPilgrim.cs" />
+    <Compile Include="HarvardPilgrimDCSWebService.cs" />
+    <Compile Include="HighMark.cs" />
+    <Compile Include="INFO.cs" />
+    <Compile Include="IvansEx.cs" />
+    <Compile Include="KentuckyMedicaidProxy.cs" />
+    <Compile Include="MaineMedicaidEx.cs" />
+    <Compile Include="MaineMedicaidSoap.cs" />
+    <Compile Include="MainMedicaidProxy.cs" />
+    <Compile Include="MedDataEx.cs" />
+    <Compile Include="MissoulaMedicaid.cs" />
+    <Compile Include="MissoulaWrapper.cs" />
+    <Compile Include="MontanaBatchRetrievalTransaction.cs" />
+    <Compile Include="MontanaBatchSubmitTransaction.cs" />
+    <Compile Include="OhioDCSWebService.cs" />
+    <Compile Include="PAMCD.cs" />
+    <Compile Include="ParamountHealthEx.cs" />
+    <Compile Include="PNTEx.cs" />
+    <Compile Include="VALIDATE_REQ_RES_PAIR.cs" />
+    <Compile Include="SCMCDDCSWebService.cs" />
+    <Compile Include="TexasMedicaidHealthcarePartnershipDCSWebService.cs" />
+    <Compile Include="EMDEON.cs" />
+    <Compile Include="EmdeonProxy.cs" />
+    <Compile Include="HTTPProcess.cs" />
+    <Compile Include="IvansProxy.cs" />
+    <Compile Include="MedDataProxy.cs" />
+    <Compile Include="PNT.cs" />
+    <Compile Include="Ivans.cs" />
+    <Compile Include="ResponseData.cs" />
+    <Compile Include="TempleteSYNC.cs" />
+    <Compile Include="TempleteASYNC.cs" />
+    <Compile Include="CaliforniaMedicaid.cs" />
+    <Compile Include="ColoradoMedicaid.cs" />
+    <Compile Include="ConnecticutMedicaid.cs" />
+    <Compile Include="DelawareMedicaid.cs" />
+    <Compile Include="DoradoSystems.cs" />
+    <Compile Include="EDIGetResponse.cs" />
+    <Compile Include="FloridaMedicaid.cs" />
+    <Compile Include="GeorgiaMedicaid.cs" />
+    <Compile Include="GetResponse.cs" />
+    <Compile Include="HawaiiMedicaid.cs" />
+    <Compile Include="IdahoMedicaid.cs" />
+    <Compile Include="IllinoisMedicaid.cs" />
+    <Compile Include="IndianaMedicaid.cs" />
+    <Compile Include="IowaMedicaid.cs" />
+    <Compile Include="KansasMedicaid.cs" />
+    <Compile Include="KentuckyMedicaid.cs" />
+    <Compile Include="LouisianaMedicaid.cs" />
+    <Compile Include="MaineMedicaid.cs" />
+    <Compile Include="MarylandMedicaid.cs" />
+    <Compile Include="MassachusettsMedicaid.cs" />
+    <Compile Include="MEDDATA.cs" />
+    <Compile Include="MichiganMedicaid.cs" />
+    <Compile Include="MinnesotaMedicaid.cs" />
+    <Compile Include="MississippiMedicaid.cs" />
+    <Compile Include="MissouriMedicaid.cs" />
+    <Compile Include="MontanaMedicaid.cs" />
+    <Compile Include="NebraskaMedicaid.cs" />
+    <Compile Include="NevadaMediciad.cs" />
+    <Compile Include="NewHampshireMedicaid.cs" />
+    <Compile Include="NewMexicoMedicaid.cs" />
+    <Compile Include="NewYorkMedicaid.cs" />
+    <Compile Include="NorthCarolinaMedicaid.cs" />
+    <Compile Include="NorthDakotaMedicaid.cs" />
+    <Compile Include="OhioMedicaid.cs" />
+    <Compile Include="OklahomaMedicaid.cs" />
+    <Compile Include="OregonMedicaid.cs" />
+    <Compile Include="PARAMOUNTHEALTH.cs" />
+    <Compile Include="PennsylvaniaMedicaid.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RelayHealth.cs" />
+    <Compile Include="RequestState.cs" />
+    <Compile Include="RhodeIslandMedicaid.cs" />
+    <Compile Include="SouthCarolinaMedicaid.cs" />
+    <Compile Include="SouthDakotaMedicaid.cs" />
+    <Compile Include="TennesseeMedicaid.cs" />
+    <Compile Include="TexasMedicaidHealthcarePartnership.cs" />
+    <Compile Include="TexasMedicaidHealthcarePartnershipDCSWebServiceEx.cs" />
+    <Compile Include="TexasMedicaidHealthcarePartnershipEx.cs" />
+    <Compile Include="TransUnionHealthcare.cs" />
+    <Compile Include="UtahMedicaid.cs" />
+    <Compile Include="ValidateRawREQ.cs" />
+    <Compile Include="ValidateRawRES.cs" />
+    <Compile Include="VendorProperties.cs" />
+    <Compile Include="VermontMedicaid.cs" />
+    <Compile Include="VirginiaMedicaid.cs" />
+    <Compile Include="VISIONSHARE.cs" />
+    <Compile Include="VisionShareEx.cs" />
+    <Compile Include="WashingtonMedicaid.cs" />
+    <Compile Include="Wellmark.cs" />
+    <Compile Include="WestVirginaProxy.cs" />
+    <Compile Include="WestVirginiaMedicaid.cs" />
+    <Compile Include="WestVirginiaMedicaidEx.cs" />
+    <Compile Include="WisconsinMedicaid.cs" />
+    <Compile Include="WyomingMedicaid.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog_EDICommunications.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="parameters.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessRules\DCSGlobal.BusinessRules.CoreLibraryII\DCSGlobal.BusinessRules.CoreLibraryII.csproj">
+      <Project>{8bb4b9e0-687a-40ef-ac7f-9871588b4027}</Project>
+      <Name>DCSGlobal.BusinessRules.CoreLibraryII</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BusinessRules\DCSGlobal.BusinessRules.CoreLibrary\DCSGlobal.BusinessRules.CoreLibrary.vbproj">
+      <Project>{28e4d6f2-3384-4643-ab13-c4a91c8196f9}</Project>
+      <Name>DCSGlobal.BusinessRules.CoreLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BusinessRules\DCSGlobal.BusinessRules.Logging\DCSGlobal.BusinessRules.Logging.csproj">
+      <Project>{b92abeb7-771f-476b-8a50-fca541895f23}</Project>
+      <Name>DCSGlobal.BusinessRules.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DCSGlobal.EDI\DCSGlobal.EDI.vbproj">
+      <Project>{e78205b5-708c-4b04-9326-f7d715b25a23}</Project>
+      <Name>DCSGlobal.EDI</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBUpgradeEngineLib">
+      <Guid>{A132CC5A-802B-48A9-8244-88B04BC43188}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.dcsglobal.com/AddressService/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.dcsglobal.com/AddressService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.dcsglobal.com/AddressService/">
+      <s:element name="VerifyAddressEnhanced">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Address1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Address2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ZipCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LicenseKey" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyAddressEnhancedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyAddressEnhancedResult" type="tns:ArrayOfAESRawAddress" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAESRawAddress">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AESRawAddress" nillable="true" type="tns:AESRawAddress" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AESRawAddress">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="diagnostics" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="line2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="csz" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="barcode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="state" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="zip" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="error" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ArrayOfAESRawAddress" nillable="true" type="tns:ArrayOfAESRawAddress" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="VerifyAddressEnhancedSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyAddressEnhanced" />
+  </wsdl:message>
+  <wsdl:message name="VerifyAddressEnhancedSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyAddressEnhancedResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyAddressEnhancedHttpGetIn">
+    <wsdl:part name="Address1" type="s:string" />
+    <wsdl:part name="Address2" type="s:string" />
+    <wsdl:part name="City" type="s:string" />
+    <wsdl:part name="State" type="s:string" />
+    <wsdl:part name="ZipCode" type="s:string" />
+    <wsdl:part name="CustomerID" type="s:string" />
+    <wsdl:part name="LicenseKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="VerifyAddressEnhancedHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfAESRawAddress" />
+  </wsdl:message>
+  <wsdl:message name="VerifyAddressEnhancedHttpPostIn">
+    <wsdl:part name="Address1" type="s:string" />
+    <wsdl:part name="Address2" type="s:string" />
+    <wsdl:part name="City" type="s:string" />
+    <wsdl:part name="State" type="s:string" />
+    <wsdl:part name="ZipCode" type="s:string" />
+    <wsdl:part name="CustomerID" type="s:string" />
+    <wsdl:part name="LicenseKey" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="VerifyAddressEnhancedHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfAESRawAddress" />
+  </wsdl:message>
+  <wsdl:portType name="DcsAddressSoap">
+    <wsdl:operation name="VerifyAddressEnhanced">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns Verified Enhanced address information validated against  USPS postal address data.</wsdl:documentation>
+      <wsdl:input message="tns:VerifyAddressEnhancedSoapIn" />
+      <wsdl:output message="tns:VerifyAddressEnhancedSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="DcsAddressHttpGet">
+    <wsdl:operation name="VerifyAddressEnhanced">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns Verified Enhanced address information validated against  USPS postal address data.</wsdl:documentation>
+      <wsdl:input message="tns:VerifyAddressEnhancedHttpGetIn" />
+      <wsdl:output message="tns:VerifyAddressEnhancedHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="DcsAddressHttpPost">
+    <wsdl:operation name="VerifyAddressEnhanced">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns Verified Enhanced address information validated against  USPS postal address data.</wsdl:documentation>
+      <wsdl:input message="tns:VerifyAddressEnhancedHttpPostIn" />
+      <wsdl:output message="tns:VerifyAddressEnhancedHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DcsAddressSoap" type="tns:DcsAddressSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VerifyAddressEnhanced">
+      <soap:operation soapAction="http://www.dcsglobal.com/AddressService/VerifyAddressEnhanced" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DcsAddressSoap12" type="tns:DcsAddressSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VerifyAddressEnhanced">
+      <soap12:operation soapAction="http://www.dcsglobal.com/AddressService/VerifyAddressEnhanced" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DcsAddressHttpGet" type="tns:DcsAddressHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="VerifyAddressEnhanced">
+      <http:operation location="/VerifyAddressEnhanced" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DcsAddressHttpPost" type="tns:DcsAddressHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="VerifyAddressEnhanced">
+      <http:operation location="/VerifyAddressEnhanced" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DcsAddress">
+    <wsdl:port name="DcsAddressSoap" binding="tns:DcsAddressSoap">
+      <soap:address location="https://10.34.1.42/dcsaddress.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DcsAddressSoap12" binding="tns:DcsAddressSoap12">
+      <soap12:address location="https://10.34.1.42/dcsaddress.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DcsAddressHttpGet" binding="tns:DcsAddressHttpGet">
+      <http:address location="https://10.34.1.42/dcsaddress.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DcsAddressHttpPost" binding="tns:DcsAddressHttpPost">
+      <http:address location="https://10.34.1.42/dcsaddress.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

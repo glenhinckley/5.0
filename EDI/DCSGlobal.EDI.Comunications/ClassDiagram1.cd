@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DCSGlobal.EDI.Comunications.EDIGetResponse">
+    <Position X="2" Y="0.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAABRAAKAEAIAAAAAASgAEAQAgAASQBCAAAEAgAAA=</HashCode>
+      <FileName>EDIGetResponse.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.Comunications.config">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>NIXM4AFQAzCExeWEyAAmjEGEIRAiaKFQRDIQGoAJADQ=</HashCode>
+      <FileName>config.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

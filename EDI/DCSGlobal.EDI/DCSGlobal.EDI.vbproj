@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E78205B5-708C-4B04-9326-F7D715B25A23}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>DCSGlobal.EDI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>None</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BapistAl.vb" />
+    <Compile Include="COMMON_CODE\CODE\EDI_5010_IMPORT.vb" />
+    <Compile Include="COMMON_CODE\CODE\EDI_5010_LoadFromDB.vb" />
+    <Compile Include="COMMON_CODE\CODE\EDI_5010_LOGGING.vb" />
+    <Compile Include="COMMON_CODE\CODE\EDI_5010_PARSE.vb" />
+    <Compile Include="COMMON_CODE\CODE\EDI_5010_FILE_MOVE.vb" />
+    <Compile Include="COMMON_CODE\CODE\StreamString.vb" />
+    <Compile Include="EDIFile.vb" />
+    <Compile Include="EDI\5010\GENERATOR\EDI_5010_BUILD_EDI_STRING.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_270_005010X279A1v2.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_270_005010X279A1_DNU.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_270_271_PAIR.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_276_277_PAIR.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_999_005010X231A1.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_271_005010X279A1.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_276_005010X212_DCS.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_276_005010X212.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_277_005010X212.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_277_005010X212_v2.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_835_005010X221A1.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_837_I_005010X291.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_837_I_005010X223A2_v2.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_837_P_005010X292.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_837_P_005010X222A1_v2.vb" />
+    <Compile Include="EDI\5010\LOADERS\EDI_5010_LoadPair276_277.vb" />
+    <Compile Include="EDI\5010\LOADERS\EDI_5010_LOAD_PAIR_270_271.vb" />
+    <Compile Include="EDI\5010\TABLES\EDI_5010_270_005010X279A1_TABLES.vb" />
+    <Compile Include="EDI\5010\TABLES\EDI_5010_271_005010X279A1_TABLES.vb" />
+    <Compile Include="EDI\5010\TABLES\EDI_5010_999_00510X231A1_TABLES.vb" />
+    <Compile Include="EDI\5010\UNIT_TESTS\EDI_5010_277_005010X212_UNIT_TEST.vb" />
+    <Compile Include="COMMON_CODE\CODE\EDI_5010_VALIDATE.vb" />
+    <Compile Include="AuditResponseLogging.vb" />
+    <Compile Include="decs.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_837_I_005010X223A2.vb" />
+    <Compile Include="EDI\5010\IMPORTERS\EDI_5010_837_P_005010X222A1.vb" />
+    <Compile Include="EDI\GENERIC\IMPORTERS\ImportTA1.vb" />
+    <Compile Include="COMMON_CODE\CODE\EDI_5010_LOAD.vb" />
+    <Compile Include="EDI\5010\TABLES\EDI_5010_276_00510X212_TABLES.vb" />
+    <Compile Include="EDI\5010\TABLES\EDI_5010_278_00510X215_TABLES.vb" />
+    <Compile Include="EDI\5010\TABLES\EDI_5010_277_00510X212_TABLES.vb" />
+    <Compile Include="EDI\5010\TABLES\EDI_5010_837_TABLES.vb" />
+    <Compile Include="EDI\5010\TABLES\EDI_5010_835_005010X221A1_TABLES.vb" />
+    <Compile Include="EDI\GENERIC\TABLES\EDI276Tables.vb" />
+    <Compile Include="EDI\GENERIC\TABLES\EDI277Tables.vb" />
+    <Compile Include="EDI\GENERIC\TABLES\EDI278Tables.vb" />
+    <Compile Include="EDI\5010\DECS\EDI_5010_COMMON_DECS.vb" />
+    <Compile Include="EDI\5010\TABLES\EDI_5010_COMMON_TABLES.vb" />
+    <Compile Include="EDITA1Tables.vb" />
+    <Compile Include="EDI\GENERIC\TABLES\EDI997Tables.vb" />
+    <Compile Include="EDI\GENERIC\TABLES\EDI835Tables.vb" />
+    <Compile Include="EDI\GENERIC\TABLES\EDIDataTables.vb" />
+    <Compile Include="FileMove.vb" />
+    <Compile Include="GenerateFile.vb" />
+    <Compile Include="EDI\GENERIC\IMPORTERS\Import270.vb" />
+    <Compile Include="EDI\GENERIC\IMPORTERS\Import271Batch.vb" />
+    <Compile Include="EDI\GENERIC\IMPORTERS\Import271.vb" />
+    <Compile Include="EDI\GENERIC\IMPORTERS\Import276.vb" />
+    <Compile Include="EDI\GENERIC\IMPORTERS\Import277.vb" />
+    <Compile Include="EDI\GENERIC\IMPORTERS\Import278.vb" />
+    <Compile Include="EDI\GENERIC\IMPORTERS\Import820.vb" />
+    <Compile Include="EDI\GENERIC\IMPORTERS\Import824.vb" />
+    <Compile Include="EDI\GENERIC\IMPORTERS\Import835.vb" />
+    <Compile Include="EDI\GENERIC\IMPORTERS\Import839.vb" />
+    <Compile Include="EDI\GENERIC\IMPORTERS\Import997.vb" />
+    <Compile Include="EDI\GENERIC\IMPORTERS\Import999.vb" />
+    <Compile Include="EDIListBuilder.vb" />
+    <Compile Include="EDI\GENERIC\LOADERS\Load270.vb" />
+    <Compile Include="EDI\GENERIC\LOADERS\Load271.vb" />
+    <Compile Include="EDI\GENERIC\LOADERS\Load276.vb" />
+    <Compile Include="EDI\GENERIC\LOADERS\Load277.vb" />
+    <Compile Include="EDI\GENERIC\LOADERS\Load277db.vb" />
+    <Compile Include="EDI\GENERIC\LOADERS\Load278.vb" />
+    <Compile Include="EDI\GENERIC\LOADERS\Load835.vb" />
+    <Compile Include="LoadFromDB.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NoResponse.vb" />
+    <Compile Include="Parse.vb" />
+    <Compile Include="Service References\srvFileTransferService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SetProcessStatusFlag.vb" />
+    <Compile Include="StringPrep.vb" />
+    <Compile Include="EDI\GENERIC\LOADERS\LoadPair276_277.vb" />
+    <Compile Include="EDI\GENERIC\TABLES\EDICommonDecs.vb" />
+    <Compile Include="UCLA.vb" />
+    <Compile Include="ValidateEDI.vb" />
+    <Compile Include="WriteEDIToDisk.vb" />
+    <Compile Include="WriteStreamToDisc.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\srvFileTransferService\service.wsdl" />
+    <None Include="Service References\srvFileTransferService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\srvFileTransferService\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessRules\DCSGlobal.BusinessRules.CoreLibraryII\DCSGlobal.BusinessRules.CoreLibraryII.csproj">
+      <Project>{8bb4b9e0-687a-40ef-ac7f-9871588b4027}</Project>
+      <Name>DCSGlobal.BusinessRules.CoreLibraryII</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BusinessRules\DCSGlobal.BusinessRules.CoreLibrary\DCSGlobal.BusinessRules.CoreLibrary.vbproj">
+      <Project>{28e4d6f2-3384-4643-ab13-c4a91c8196f9}</Project>
+      <Name>DCSGlobal.BusinessRules.CoreLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BusinessRules\DCSGlobal.BusinessRules.FileTransferClient\DCSGlobal.BusinessRules.FileTransferClient.csproj">
+      <Project>{6e978ac2-2ce7-4d38-9587-8d1022ac4086}</Project>
+      <Name>DCSGlobal.BusinessRules.FileTransferClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BusinessRules\DCSGlobal.BusinessRules.Logging\DCSGlobal.BusinessRules.Logging.csproj">
+      <Project>{b92abeb7-771f-476b-8a50-fca541895f23}</Project>
+      <Name>DCSGlobal.BusinessRules.Logging</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FilePrep.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EDI\4010\" />
+    <Folder Include="EDI\6020\" />
+    <Folder Include="EDI\7030\" />
+    <Folder Include="EDI\7040\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\srvFileTransferService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srvFileTransferService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srvFileTransferService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srvFileTransferService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

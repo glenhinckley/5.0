@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DCSGlobal.BusinessRules.CoreLibraryII.SingleGlobalInstance" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAQAAAAACAAAIAA=</HashCode>
+      <FileName>APPSingleGlobalInstance.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.BusinessRules.CoreLibraryII.CustomThreadPool" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgkQACAECRACAAAAMAAAhgBBAACGAAAwAACAAAEQBA=</HashCode>
+      <FileName>CustomThreadPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.BusinessRules.CoreLibraryII.ClientHandle" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>CustomThreadPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.BusinessRules.CoreLibraryII.TaskStatus" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>CustomThreadPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.BusinessRules.CoreLibraryII.Grid" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACIAAAAAJAIAYAABAECCQAQIAggAAYCCACAAAAAAA=</HashCode>
+      <FileName>Grid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.BusinessRules.CoreLibraryII.MachineID" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAEAAAAAAAAAAAAABAgAAACAAAAAAAAAAE=</HashCode>
+      <FileName>MachineID.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.BusinessRules.CoreLibraryII.wifi" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>wfi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.BusinessRules.Logging.HandleInfo" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAEAAABASAABAAAAAAABAAAAAAAAAAACAAA=</HashCode>
+      <FileName>HandleInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.Comunications.IPC.NetPipes.StreamString" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAEAAAAAgAAAAAAAAAEAQAAAAAAAAAAAAE=</HashCode>
+      <FileName>IPCStream.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.Comunications.IPC.NetPipes.ReadFileToStream" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAACAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>IPCStream.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.Comunications.IPC.NetPipes.IPCStream" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IPCStream.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Delegate Name="DCSGlobal.BusinessRules.CoreLibraryII.UserTask" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CustomThreadPool.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

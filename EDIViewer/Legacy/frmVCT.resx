@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="txtXML.Text" xml:space="preserve">
+    <value>&lt;parameter&gt;&lt;vendor name="AVAILITY_OLD"&gt;
+    &lt;wsdl&gt;https://apps.availity.com/availity/B2BHCTransactionServlet&lt;/wsdl&gt;
+    &lt;Testwsdl&gt;https://apps.availity.com/availity/B2BHCTransactionServlet&lt;/Testwsdl&gt;
+    &lt;username /&gt;
+    &lt;password /&gt;
+    &lt;apiKey /&gt;
+    &lt;ContentType&gt;application/x-www-form-urlencoded&lt;/ContentType&gt;
+    &lt;Method&gt;POST&lt;/Method&gt;
+    &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+    &lt;TimeToWait&gt;180000&lt;/TimeToWait&gt;
+    &lt;LogToREQRES&gt;0&lt;/LogToREQRES&gt;
+                &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="IVANS"&gt;
+    &lt;wsdl&gt;https://eligibilityone.abilitynetwork.com/EligibilityOne.asmx&lt;/wsdl&gt;
+    &lt;username&gt;8DC00005&lt;/username&gt;
+    &lt;password&gt;DC$Gl0bal//2013&lt;/password&gt;
+    &lt;apiKey /&gt;
+    &lt;ContentType /&gt;
+    &lt;Method&gt;POST&lt;/Method&gt;
+    &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+    &lt;TimeToWait&gt;150000&lt;/TimeToWait&gt;
+    &lt;LogToREQRES&gt;0&lt;/LogToREQRES&gt;
+    &lt;ClientId&gt;f9e52687-a2e0-4d9c-8591-59516c9fd026&lt;/ClientId&gt;
+    &lt;PreAuthenticate&gt;true&lt;/PreAuthenticate&gt;
+                &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="POST-N-TRACK"&gt;
+    &lt;wsdl&gt;https://realtime1.post-n-track.com/realtime/request_x12.aspx&lt;/wsdl&gt;
+    &lt;Testwsdl&gt;https://realtime1.post-n-track.com/realtime/request_x12.aspx&lt;/Testwsdl&gt;
+    &lt;username&gt;PNTUserName&lt;/username&gt;
+    &lt;password&gt;PNTPassword&lt;/password&gt;
+    &lt;apiKey /&gt;
+    &lt;ContentType&gt;application/x-www-form-urlencoded&lt;/ContentType&gt;
+    &lt;Method&gt;POST&lt;/Method&gt;
+    &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+    &lt;TimeToWait&gt;150000&lt;/TimeToWait&gt;
+    &lt;LogToREQRES&gt;0&lt;/LogToREQRES&gt;
+                &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="MEDDATA"&gt;
+    &lt;wsdl&gt;https://services.meddatahealth.com/submissionportal/submissionportal.asmx?wsdl&lt;/wsdl&gt;
+    &lt;Testwsdl&gt;https://services.meddatahealth.com/submissionportal/submissionportal.asmx?wsdl&lt;/Testwsdl&gt;
+    &lt;username&gt;2019275&lt;/username&gt;
+    &lt;password&gt;fT~H31]m&lt;/password&gt;
+    &lt;apiKey /&gt;
+    &lt;ContentType /&gt;
+    &lt;Method /&gt;
+    &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+    &lt;TimeToWait&gt;150000&lt;/TimeToWait&gt;
+    &lt;LogToREQRES&gt;0&lt;/LogToREQRES&gt;
+    &lt;RequestFormat&gt;Edi&lt;/RequestFormat&gt;
+    &lt;ResponseFormat&gt;Edi&lt;/ResponseFormat&gt;
+                &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="VISIONSHARE"&gt;
+    &lt;VS_PROXY_PORT&gt;80&lt;/VS_PROXY_PORT&gt;
+    &lt;VS_PROXY_SERVER /&gt;
+    &lt;VS_HOST_ADDRESS&gt;204.11.46.227&lt;/VS_HOST_ADDRESS&gt;
+    &lt;VS_SES_PORT&gt;4090&lt;/VS_SES_PORT&gt;
+    &lt;username&gt;dcsgwpnt&lt;/username&gt;
+    &lt;password&gt;Dx9m3fHvy&lt;/password&gt;
+    &lt;connection&gt;SYNC_WELLPOINT&lt;/connection&gt;
+    &lt;VS_SES_PORT1&gt;4091&lt;/VS_SES_PORT1&gt;
+    &lt;username1&gt;dcsghets&lt;/username1&gt;
+    &lt;password1&gt;dcsg821z&lt;/password1&gt;
+    &lt;connection1&gt;SYNC_HETS_PROD&lt;/connection1&gt;
+                &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="DORADO"&gt;
+    &lt;wsdl&gt;https://api.doradosystems.com/rt/validate?api_key=yccQdicTcceNbLQbPesciCrKH&lt;/wsdl&gt;
+    &lt;Testwsdl&gt;https://api.doradosystems.com/rt/validate?api_key=yccQdicTcceNbLQbPesciCrKH&lt;/Testwsdl&gt;
+    &lt;username /&gt;
+    &lt;password /&gt;
+    &lt;apiKey /&gt;
+    &lt;ContentType&gt;application/x-www-form-urlencoded&lt;/ContentType&gt;
+    &lt;Method&gt;POST&lt;/Method&gt;
+    &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+    &lt;TimeToWait&gt;150000&lt;/TimeToWait&gt;
+    &lt;LogToREQRES&gt;0&lt;/LogToREQRES&gt;
+    &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+    &lt;Url276&gt;https://api.doradosystems.com/rt/claim_status?api_key=yccQdicTcceNbLQbPesciCrKH&lt;/Url276&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="EMDEON"&gt;
+    &lt;wsdl&gt;https://ra.emdeon.com/astwebservice/aws.asmx&lt;/wsdl&gt;
+    &lt;Testwsdl&gt;https://ra.emdeon.com/astwebservice/aws.asmx&lt;/Testwsdl&gt;
+    &lt;username&gt;PMNADCSGL&lt;/username&gt;
+    &lt;password&gt;TMURwvb3&lt;/password&gt;
+    &lt;apiKey&gt;jhZiUkWOgY&lt;/apiKey&gt;
+    &lt;ContentType&gt;application/x-www-form-urlencoded&lt;/ContentType&gt;
+    &lt;Method&gt;POST&lt;/Method&gt;
+    &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+    &lt;TimeToWait&gt;180000&lt;/TimeToWait&gt;
+    &lt;LogToREQRES&gt;0&lt;/LogToREQRES&gt;
+    &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+    &lt;LookupUrl&gt;https://assistant.emdeon.com/Services/Assistant&lt;/LookupUrl&gt;
+  &lt;/vendor&gt;
+   &lt;vendor name="EMDEONLOOKUP"&gt;
+    &lt;wsdl&gt;https://ra.emdeon.com/astwebservice/aws.asmx&lt;/wsdl&gt;
+   &lt;Testwsdl&gt;https://ra.emdeon.com/astwebservice/aws.asmx&lt;/Testwsdl&gt;
+    &lt;username&gt;PMNADCSGL&lt;/username&gt;
+    &lt;password&gt;TMURwvb3&lt;/password&gt;
+    &lt;apiKey&gt;jhZiUkWOgY&lt;/apiKey&gt;
+    &lt;ContentType&gt;application/x-www-form-urlencoded&lt;/ContentType&gt;
+    &lt;Method&gt;POST&lt;/Method&gt;
+    &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+    &lt;TimeToWait&gt;180000&lt;/TimeToWait&gt;
+    &lt;LogToREQRES&gt;0&lt;/LogToREQRES&gt;
+    &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+    &lt;LookupUrl&gt;https://assistant.emdeon.com/Services/Assistant&lt;/LookupUrl&gt;
+  &lt;/vendor&gt;
+   &lt;vendor name="NEMCD"&gt;
+    &lt;wsdl&gt;https://COREWEB-DHHS.NE.GOV:10800/soap&lt;/wsdl&gt;
+    &lt;Testwsdl&gt;https://COREWEB-DHHS.NE.GOV:10800/soap&lt;/Testwsdl&gt;
+    &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+    &lt;TimeToWait&gt;180000&lt;/TimeToWait&gt;
+    &lt;LogToREQRES&gt;0&lt;/LogToREQRES&gt;
+    &lt;SenderID&gt;DCSGLOBALEDIEXG&lt;/SenderID&gt;
+    &lt;ReceiverID&gt;MMISNEBR&lt;/ReceiverID&gt;
+    &lt;username&gt;XEC0532PRT&lt;/username&gt;
+    &lt;password&gt;PS\wPZ7/DqBy&lt;/password&gt;
+                &lt;sendTimeout&gt;180000&lt;/sendTimeout&gt;
+    &lt;receiveTimeout&gt;180000&lt;/receiveTimeout&gt;
+                &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="PARAMOUNTEDI"&gt;
+    &lt;wsdl&gt;https://phcedi.promedica.org:50043/x12/realtime/soap?request_type=X12_270_Request_005010X279A1&lt;/wsdl&gt;
+    &lt;Testwsdl&gt;https://phcedi.promedica.org:50043/x12/realtime/soap?request_type=X12_270_Request_005010X279A1&lt;/Testwsdl&gt;
+    &lt;username /&gt;
+    &lt;password /&gt;
+    &lt;apiKey /&gt;
+    &lt;ContentType&gt;text/xml;charset="utf-8"&lt;/ContentType&gt;
+    &lt;Accept&gt;text/xml&lt;/Accept&gt;
+    &lt;Method&gt;POST&lt;/Method&gt;
+    &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+    &lt;TimeToWait&gt;180000&lt;/TimeToWait&gt;
+    &lt;LogToREQRES&gt;0&lt;/LogToREQRES&gt;
+                &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="TXMCD"&gt;
+    &lt;wsdl&gt;http://10.34.1.206:9900/TxMcd.asmx&lt;/wsdl&gt;
+     &lt;Testwsdl&gt;http://10.34.1.206:9900/TxMcd.asmx&lt;/Testwsdl&gt;
+    &lt;ContentType&gt;text/xml;charset="utf-8"&lt;/ContentType&gt;
+    &lt;Accept&gt;application/soap+xml&lt;/Accept&gt;
+    &lt;Method&gt;POST&lt;/Method&gt;
+    &lt;login&gt;dcs&lt;/login&gt;
+    &lt;password&gt;dcs#1&lt;/password&gt;
+    &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+    &lt;TimeToWait&gt;180000&lt;/TimeToWait&gt;
+    &lt;LogToREQRES&gt;0&lt;/LogToREQRES&gt;
+                &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="MEMCD"&gt;
+    &lt;wsdl&gt;https://mainecare.maine.gov/CAQH_SOAPService/SOAPService.svc&lt;/wsdl&gt;
+     &lt;Testwsdl&gt;https://mainecare.maine.gov/CAQH_SOAPService/SOAPService.svc&lt;/Testwsdl&gt;
+    &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+    &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+    &lt;PayloadID&gt;f81d4fae-7dec-11d0-a765-00a0c91e6bf6&lt;/PayloadID&gt;
+    &lt;TimeStamp&gt;2007-08-30T10:20:34Z&lt;/TimeStamp&gt;
+    &lt;SenderID&gt;METPID005914&lt;/SenderID&gt;
+    &lt;ReceiverID&gt;ME_MMIS_4MOLINA&lt;/ReceiverID&gt;
+    &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+    &lt;username&gt;Dcsglobal&lt;/username&gt;
+    &lt;password&gt;Rangers2017!&lt;/password&gt;
+                &lt;sendTimeout&gt;30&lt;/sendTimeout&gt;
+    &lt;receiveTimeout&gt;30&lt;/receiveTimeout&gt;
+                &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+&lt;vendor name="ARMCD"&gt;
+    &lt;wsdl&gt;https://secure.medicaid.state.ar.us:6443/soap/COREservice.svc/soap12&lt;/wsdl&gt;
+     &lt;Testwsdl&gt;https://secure.medicaid.state.ar.us:6443/soap/COREservice.svc/soap12&lt;/Testwsdl&gt;
+    &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+    &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+    &lt;PayloadID&gt;f81d4fae-7dec-11d0-a765-00a0c91e6bf6&lt;/PayloadID&gt;
+    &lt;TimeStamp&gt;2007-08-30T10:20:34Z&lt;/TimeStamp&gt;
+    &lt;SenderID&gt;MC028720&lt;/SenderID&gt;
+    &lt;ReceiverID&gt;secure.medicaid.state.ar.us&lt;/ReceiverID&gt;
+    &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+    &lt;username&gt;MC028720&lt;/username&gt;
+    &lt;password&gt;Cowboys2017$&lt;/password&gt;
+    &lt;sendTimeout&gt;30&lt;/sendTimeout&gt;
+    &lt;receiveTimeout&gt;30&lt;/receiveTimeout&gt;
+                &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+   &lt;vendor name="GAMCD"&gt;
+      &lt;wsdl&gt;https://hts.mmis.georgia.gov/GA_ACA1104WCFServices/GA_ACA1104WCFServices.svc&lt;/wsdl&gt;
+       &lt;Testwsdl&gt;https://hts.mmis.georgia.gov/GA_ACA1104WCFServices/GA_ACA1104WCFServices.svc&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;300502&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;77034&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;TPID300502&lt;/username&gt;
+      &lt;password&gt;Spring2017#&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="ALMCD"&gt;
+      &lt;wsdl&gt;https://ediservices.medicaid.alabamaservices.org/PROD/CoreSoapServices/CoreRealTime.svc&lt;/wsdl&gt;
+       &lt;Testwsdl&gt;https://ediservices.medicaid.alabamaservices.org/PROD/CoreSoapServices/CoreRealTime.svc&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;300011422&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;752548221&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;dcsuser&lt;/username&gt;
+      &lt;password&gt;Dcsglobal$2017&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+      &lt;vendor name="WVMCD"&gt;
+      &lt;wsdl&gt;https://www.wvmmis.com/CAQH_SOAPService/SOAPService.svc&lt;/wsdl&gt;
+       &lt;Testwsdl&gt;https://www.wvmmis.com/CAQH_SOAPService/SOAPService.svc&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;WVTPID006574&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;WV_MMIS_4MOLINA&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;dcsuser1&lt;/username&gt;
+      &lt;password&gt;Tiger2017$&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+    &lt;vendor name="CTMCD"&gt;
+      &lt;wsdl&gt;https://ediservices.ctdssmap.com/PROD/CoreSoapServices/CoreRealTime.svc&lt;/wsdl&gt;
+       &lt;Testwsdl&gt;https://ediservices.ctdssmap.com/PROD/CoreSoapServices/CoreRealTime.svc&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;209001838&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;445498161&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;DCSUSER&lt;/username&gt;
+      &lt;password&gt;Tiger2017$&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="SCMCD"&gt;
+      &lt;wsdl&gt;https://portal.scmedicaid.com/acawsv1/services/Acaws?wsdl&lt;/wsdl&gt;
+       &lt;Testwsdl&gt;https://portal.scmedicaid.com/acawsv1/services/Acaws?wsdl&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;M00707TX4&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;SCMEDICAID&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;M00707TX4&lt;/username&gt;
+      &lt;password&gt;Rangers2017!&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+   &lt;vendor name="BCNC"&gt;
+      &lt;wsdl&gt;https://services.bcbsnc.com/caqh/soap/realtime&lt;/wsdl&gt;
+       &lt;Testwsdl&gt;https://services.bcbsnc.com/caqh/soap/realtime&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;421653068&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;560894904&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;RTS01279&lt;/username&gt;
+      &lt;password&gt;dcsg01&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+   &lt;vendor name="WAMCD"&gt;
+      &lt;wsdl&gt;https://www.waproviderone.org/realtime-soap&lt;/wsdl&gt;
+       &lt;Testwsdl&gt;https://www.waproviderone.org/realtime-soap&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;2070087&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;77045&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;M00707TX4&lt;/username&gt;
+      &lt;password&gt;Rangers2017!&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="MISSOULA"&gt;
+      &lt;wsdl&gt;https://qbe.trizetto.net/caqh_mceb_QCCSvcHost/QCCTransSvc.svc&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://qbe.trizetto.net/caqh_mceb_QCCSvcHost/QCCTransSvc.svc&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;DCS&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;RECEIVER&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;DCSGlobal&lt;/username&gt;
+      &lt;password&gt;password_1&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+   &lt;vendor name="NCMCD"&gt;
+      &lt;wsdl&gt;https://edi.nctracks.nc.gov/EDIGateway&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://edi.nctracks.nc.gov/EDIGateway&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;AS56&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;NCTRACKS&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;DCS&lt;/username&gt;
+      &lt;password&gt;Cowboys2016#&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+   &lt;vendor name="DEMCD"&gt;
+      &lt;wsdl&gt;https://medicaidservices.dhss.delaware.gov/HP.CoreServices/CoreRealTime.svc&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://medicaidservices.dhss.delaware.gov/HP.CoreServices/CoreRealTime.svc&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;4159265&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;345724166&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;dcsglobal1&lt;/username&gt;
+      &lt;password&gt;Cowboys2017$&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+   &lt;vendor name="BCAL"&gt;
+      &lt;wsdl&gt;https://infosol.bcbsal.org:4433/&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://infosol.bcbsal.org:4433/&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;DCSG0001&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;zx4m8uhy&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;562&lt;/username&gt;
+      &lt;password&gt;zx4m8uhy&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="ANTHEM"&gt;
+      &lt;wsdl&gt;https://www.hipaaiaswebservice.com:443/wsedirealtime/wsedirealtime&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://www.hipaaiaswebservice.com:443/wsedirealtime/wsedirealtime&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;RT00452C&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;040&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;RT00452C&lt;/username&gt;
+      &lt;password&gt;27xaccess&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+   &lt;vendor name="BCTN"&gt;
+      &lt;wsdl&gt;https://bluecore.bcbst.com/caqh/Core&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://bluecore.bcbst.com/caqh/Core&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;421653068&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;00390&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;Dcsglobal&lt;/username&gt;
+      &lt;password&gt;Rangers2017#&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="BCDE"&gt;
+      &lt;wsdl&gt;https://services.highmark.com:8443/edirpc/Core&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://services.highmark.com:8443/edirpc/Core&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;V147865&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;54771&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;V147865&lt;/username&gt;
+      &lt;password&gt;rcvvxzre&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="MOMCD"&gt;
+      &lt;wsdl&gt;https://www.emomed.com/servicegateway/&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://www.emomed.com/servicegateway/&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;MCHHABRA&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;431754897&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;mchhabra&lt;/username&gt;
+      &lt;password&gt;Rangers2017#&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="CENTENE"&gt;
+      &lt;wsdl&gt;https://rt-edi.centene.com/corertservice/Core?wsdl&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://rt-edi.centene.com/corertservice/Core?wsdl&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;DCSGLOBAL&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;421406317&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;DCSGLOBALDo_user1&lt;/username&gt;
+      &lt;password&gt;DCSGLOBALDoUs3r1&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="HARVARD_DIRECT"&gt;
+      &lt;wsdl&gt;https://b2b.harvardpilgrim.org/caqhcoreV4&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://b2b.harvardpilgrim.org/caqhcoreV4&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;HPHC3038&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;HPHC0001&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;4.0.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;NOUSERNAME&lt;/username&gt;
+      &lt;password&gt;dcssystems&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;60000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="HARVARD"&gt;
+      &lt;wsdl&gt;http://10.34.1.141:6020/HarvardPilgrim.asmx&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;http://10.34.1.141:6020/HarvardPilgrim.asmx&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;CORERuleVersion&gt;4.0.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;NOUSERNAME&lt;/username&gt;/  
+      &lt;login&gt;dcs&lt;/login&gt;
+      &lt;password&gt;dcs#1&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+      &lt;TimeToWait&gt;180000&lt;/TimeToWait&gt;
+      &lt;LogToREQRES&gt;0&lt;/LogToREQRES&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="AVAILITY"&gt;
+      &lt;wsdl&gt;https://gateway.availity.com:2021/core&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://gateway.availity.com:2021/core&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;DCSGLOBAL&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;AVAILITY&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;dcs5010edi&lt;/username&gt;
+      &lt;password&gt;NH0064762&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+   &lt;vendor name="BCRI"&gt;
+      &lt;wsdl&gt;https://www.bcbsri.com/RealTimeServicesWeb/services/X12RequestHandlerService&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://www.bcbsri.com/RealTimeServicesWeb/services/X12RequestHandlerService&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;270-5010&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;NOSENDER&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;NORECEIVER&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;DCSRT_17&lt;/username&gt;
+      &lt;password&gt;Bz1Agj@H0mE&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="BCWV"&gt;
+      &lt;wsdl&gt;https://services.highmark.com:8443/edirpc/Core&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://services.highmark.com:8443/edirpc/Core&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;V148227&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;54828&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;V148227&lt;/username&gt;
+      &lt;password&gt;rangers2017&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+   &lt;vendor name="BCWVDCS"&gt;
+      &lt;wsdl&gt;http://10.34.1.185:9155/BcWv.asmx&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;http://10.34.1.185:9155/BcWv.asmx&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;CORERuleVersion&gt;4.0.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;NOUSERNAME&lt;/username&gt;/  
+      &lt;login&gt;dcs&lt;/login&gt;
+      &lt;password&gt;dcs#1&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+      &lt;TimeToWait&gt;180000&lt;/TimeToWait&gt;
+      &lt;LogToREQRES&gt;0&lt;/LogToREQRES&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="WELLMARK"&gt;
+                  &lt;wsdl&gt;https://services.wellmark.com/WellmarkEDIServiceExternal/WellmarkEDIOperations.svc&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://services.wellmark.com/WellmarkEDIServiceExternal/WellmarkEDIOperations.svc&lt;/Testwsdl&gt;      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;RTE11899&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;88848&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;DSNXRTEDCS&lt;/username&gt;
+      &lt;password&gt;Qz93j4hM33sEaB&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="KYMCD"&gt;
+                  &lt;wsdl&gt;https://services.kymmis.com/RTEnquiryServiceApp/RealTime.svc&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://services.kymmis.com/RTEnquiryServiceApp/RealTime.svc&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;9900005108&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;KYMEDICAID&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;99005108&lt;/username&gt;
+      &lt;password&gt;BhT2VJA=&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+   &lt;vendor name="BCNE"&gt;
+                  &lt;wsdl&gt;https://edigateway.nebraskablue.com/BCBSNE.EDIGateway.EligClaimStatus.Svcs/SoapServiceWrapper.svc&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://edigateway.nebraskablue.com/BCBSNE.EDIGateway.EligClaimStatus.Svcs/SoapServiceWrapper.svc&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;1760034R&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;NEBLUECONNECT&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;dcsglobalsystems&lt;/username&gt;
+      &lt;password&gt;p3BJDsZdsT&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="BCPA"&gt;
+      &lt;wsdl&gt;https://services.highmark.com:8443/edirpc/Core&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://services.highmark.com:8443/edirpc/Core&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;V148552&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;54771&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;V148552&lt;/username&gt;
+      &lt;password&gt;u4cew7kj&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+                  &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+   &lt;vendor name="FLMCD"&gt;
+      &lt;wsdl&gt;https://ediservices.flmmis.com/PROD/CoreSoapServices/CoreRealTime.svc&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://ediservices.flmmis.com/PROD/CoreSoapServices/CoreRealTime.svc&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;018889800&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;77027&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;Dcsglo1&lt;/username&gt;
+      &lt;password&gt;Cowboys2017$&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+      &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+   &lt;vendor name="OHMCD"&gt;
+      &lt;wsdl&gt;http://10.34.1.141:7001/OhioMedicaid.asmx&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;http://10.34.1.141:7001/OhioMedicaid.asmx&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;NOUSERNAME&lt;/username&gt;/  
+      &lt;login&gt;dcs&lt;/login&gt;
+      &lt;password&gt;dcs#1&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+      &lt;TimeToWait&gt;180000&lt;/TimeToWait&gt;
+      &lt;LogToREQRES&gt;0&lt;/LogToREQRES&gt;
+       &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="NYMCD"&gt;
+	  &lt;wsdl&gt;https://caqh.emedny.org/eMedNY/EDIGateway&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://caqh.emedny.org/eMedNY/EDIGateway&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;4787239&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;eMedNY&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;DE23FF8F&lt;/username&gt;
+      &lt;password&gt;Dcs34Global!#&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+      &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="COMCD"&gt;
+	  &lt;wsdl&gt;https://colorado-coreservices.xco.dcs-usps.com/ACACoreService/CoreRealTime&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://colorado-coreservices.xco.dcs-usps.com/ACACoreService/CoreRealTime&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;3048143&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;COMEDASSISTPROG&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;3048143&lt;/username&gt;
+      &lt;password&gt;q2$AG64r&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+      &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;vendor name="BCLA"&gt;
+	  &lt;wsdl&gt;https://exportalservices.bcbsla.com/CoreRules/CoreRuleService.svc&lt;/wsdl&gt;
+      &lt;Testwsdl&gt;https://exportalservices.bcbsla.com/CoreRules/CoreRuleService.svc&lt;/Testwsdl&gt;
+      &lt;PayloadType&gt;X12_270_Request_005010X279A1&lt;/PayloadType&gt;
+      &lt;ProcessingMode&gt;RealTime&lt;/ProcessingMode&gt;
+      &lt;SenderID&gt;T0008957&lt;/SenderID&gt;
+      &lt;ReceiverID&gt;BCBSLA001&lt;/ReceiverID&gt;
+      &lt;CORERuleVersion&gt;2.2.0&lt;/CORERuleVersion&gt;
+      &lt;username&gt;T0008957&lt;/username&gt;
+      &lt;password&gt;rn#*FYnj6S&lt;/password&gt;
+      &lt;ServiceTimeOut&gt;180000&lt;/ServiceTimeOut&gt;
+      &lt;VMetricsLogging&gt;0&lt;/VMetricsLogging&gt;
+  &lt;/vendor&gt;
+  &lt;/parameter&gt;</value>
+  </data>
+  <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>127, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+</root>

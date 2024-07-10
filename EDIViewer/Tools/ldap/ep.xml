@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<clients>
+  <client>
+    <name>JHS</name>
+    <endpoint></endpoint>
+    <port></port>
+  </client>
+  <client>
+    <name>DCS_LOCAL</name>
+    <endpoint>qRfXzt8z3hEXqo9MeO5BCg==</endpoint>
+    <port>bAbsotCpmI1J3i+913EQbA==</port>
+  </client>
+</clients>

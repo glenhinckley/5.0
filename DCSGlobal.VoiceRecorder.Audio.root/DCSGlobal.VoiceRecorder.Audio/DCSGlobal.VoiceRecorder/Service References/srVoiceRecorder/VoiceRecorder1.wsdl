@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://com.dcsglobal.voicerecorder" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://com.dcsglobal.voicerecorder" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://com.dcsglobal.voicerecorder">
+      <s:element name="AddTrack">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_FILE_NAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_SUBJECT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_NOTE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_CONTACT_NUMBER" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_CONTACT_PERSON_FIRST" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_CONTACT_PERSON_LAST" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_CONTACT_PERSON_EMAIL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="USER_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_START_TIME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_END_TIME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ACCOUNT_NUMBER" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MRN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DOR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SOURCE_DEVICE" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTrackResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddTrackResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackSent">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TRACK_ID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="TRACK_SENT" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TrackSentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TrackSentResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTrackDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TRACK_DETAIL_ID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_DETAIL_SUBJECT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_DETAIL_NOTE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="USER_ID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="START_TIME" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="END_TIME" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ACCOUNT_NUMBER" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MRN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DOR" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTrackDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateTrackDetailsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHospCode">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetHospCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHospCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTrackDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TRACK_ID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_DETAIL_SUBJECT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_DETAIL_NOTE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="USER_ID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="START_TIME" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="END_TIME" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ACCOUNT_NUMBER" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MRN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DOR" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddTrackDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddTrackDetailsResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTrack">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="TrackID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_FILE_NAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_SUBJECT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_NOTE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_CONTACT_NUMBER" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_CONTACT_PERSON_FIRST" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_CONTACT_PERSON_LAST" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_CONTACT_PERSON_EMAIL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="USER_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_START_TIME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TRACK_END_TIME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ACCOUNT_NUMBER" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MRN" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DOR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SOURCE_DEVICE" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateTrackResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateTrackResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddTrackSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTrack" />
+  </wsdl:message>
+  <wsdl:message name="AddTrackSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTrackResponse" />
+  </wsdl:message>
+  <wsdl:message name="TrackSentSoapIn">
+    <wsdl:part name="parameters" element="tns:TrackSent" />
+  </wsdl:message>
+  <wsdl:message name="TrackSentSoapOut">
+    <wsdl:part name="parameters" element="tns:TrackSentResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTrackDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateTrackDetails" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTrackDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateTrackDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHospCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHospCode" />
+  </wsdl:message>
+  <wsdl:message name="GetHospCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHospCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddTrackDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:AddTrackDetails" />
+  </wsdl:message>
+  <wsdl:message name="AddTrackDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:AddTrackDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTrackSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateTrack" />
+  </wsdl:message>
+  <wsdl:message name="UpdateTrackSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateTrackResponse" />
+  </wsdl:message>
+  <wsdl:portType name="VoiceRecorderSoap">
+    <wsdl:operation name="AddTrack">
+      <wsdl:input message="tns:AddTrackSoapIn" />
+      <wsdl:output message="tns:AddTrackSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TrackSent">
+      <wsdl:input message="tns:TrackSentSoapIn" />
+      <wsdl:output message="tns:TrackSentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrackDetails">
+      <wsdl:input message="tns:UpdateTrackDetailsSoapIn" />
+      <wsdl:output message="tns:UpdateTrackDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHospCode">
+      <wsdl:input message="tns:GetHospCodeSoapIn" />
+      <wsdl:output message="tns:GetHospCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTrackDetails">
+      <wsdl:input message="tns:AddTrackDetailsSoapIn" />
+      <wsdl:output message="tns:AddTrackDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrack">
+      <wsdl:input message="tns:UpdateTrackSoapIn" />
+      <wsdl:output message="tns:UpdateTrackSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VoiceRecorderSoap" type="tns:VoiceRecorderSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddTrack">
+      <soap:operation soapAction="http://com.dcsglobal.voicerecorder/AddTrack" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackSent">
+      <soap:operation soapAction="http://com.dcsglobal.voicerecorder/TrackSent" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrackDetails">
+      <soap:operation soapAction="http://com.dcsglobal.voicerecorder/UpdateTrackDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHospCode">
+      <soap:operation soapAction="http://com.dcsglobal.voicerecorder/GetHospCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTrackDetails">
+      <soap:operation soapAction="http://com.dcsglobal.voicerecorder/AddTrackDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrack">
+      <soap:operation soapAction="http://com.dcsglobal.voicerecorder/UpdateTrack" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VoiceRecorderSoap12" type="tns:VoiceRecorderSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddTrack">
+      <soap12:operation soapAction="http://com.dcsglobal.voicerecorder/AddTrack" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TrackSent">
+      <soap12:operation soapAction="http://com.dcsglobal.voicerecorder/TrackSent" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrackDetails">
+      <soap12:operation soapAction="http://com.dcsglobal.voicerecorder/UpdateTrackDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHospCode">
+      <soap12:operation soapAction="http://com.dcsglobal.voicerecorder/GetHospCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTrackDetails">
+      <soap12:operation soapAction="http://com.dcsglobal.voicerecorder/AddTrackDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTrack">
+      <soap12:operation soapAction="http://com.dcsglobal.voicerecorder/UpdateTrack" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VoiceRecorder">
+    <wsdl:port name="VoiceRecorderSoap" binding="tns:VoiceRecorderSoap">
+      <soap:address location="http://10.1.1.112:8506/VoiceRecorder.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VoiceRecorderSoap12" binding="tns:VoiceRecorderSoap12">
+      <soap12:address location="http://10.1.1.112:8506/VoiceRecorder.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

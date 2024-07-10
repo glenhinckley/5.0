@@ -1,0 +1,19 @@
+﻿	09-26-2016 1100 Glen
+	added code to suprese validation if get res is not a cucces and the ISA <109 condetions or not met
+	added the timespan ticks to dodrode loging in case of failure
+
+	 09-22-2016 1700 glen
+	 line 1163
+	 added if to check for MEDDATA as BHT03 check failes
+	             if (VendorName != "MEDDATA")
+            {
+                if (B_RES != B_REQ)
+                {
+                    log.ExceptionDetails("bht misr match", Convert.ToString(_TaskID) + "|" + Convert.ToString(VendorName) + "|" + Convert.ToString(_RES));
+
+
+                    r = -1;
+
+
+                }
+            }

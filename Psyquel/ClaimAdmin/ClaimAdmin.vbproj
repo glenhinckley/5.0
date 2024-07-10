@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{75A9CC3A-DB79-40D1-BB89-1CCCD7663B6D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>ClaimAdmin.My.MyApplication</StartupObject>
+    <RootNamespace>ClaimAdmin</RootNamespace>
+    <AssemblyName>ClaimAdmin</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>ClaimAdmin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>ClaimAdmin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmEditClaim.Designer.vb">
+      <DependentUpon>frmEditClaim.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditClaim.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEDIWizard.Designer.vb">
+      <DependentUpon>frmEDIWizard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmEDIWizard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFindCPC.Designer.vb">
+      <DependentUpon>frmFindCPC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFindCPC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFindInsurance.Designer.vb">
+      <DependentUpon>frmFindInsurance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFindInsurance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportERAs.Designer.vb">
+      <DependentUpon>frmImportERAs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportERAs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRejects.Designer.vb">
+      <DependentUpon>frmRejects.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRejects.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch.Designer.vb">
+      <DependentUpon>frmSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubmission.Designer.vb">
+      <DependentUpon>frmSubmission.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubmission.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTx.Designer.vb">
+      <DependentUpon>frmTx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmTx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modules\EDI_5010_835_005010X221A1.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmEDIWizard.resx">
+      <DependentUpon>frmEDIWizard.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportERAs.resx">
+      <DependentUpon>frmImportERAs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubmission.resx">
+      <DependentUpon>frmSubmission.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTx.resx">
+      <DependentUpon>frmTx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{EF53050B-882E-4776-B643-EDA472E8E3F2}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BenefactorBz\BenefactorBz.vbproj">
+      <Project>{05080F04-4C21-4C77-B45B-4759A9BF7765}</Project>
+      <Name>BenefactorBz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BenefitsBz\BenefitsBz.vbproj">
+      <Project>{C0AE2D57-E7FF-4079-B875-6D116CAC1C2D}</Project>
+      <Name>BenefitsBz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClinicBZ\ClinicBZ.vbproj">
+      <Project>{559A79AF-7D23-4C3B-89CE-7471E55F01AE}</Project>
+      <Name>ClinicBZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EDIBZ\EDIBZ.vbproj">
+      <Project>{84DDB170-6EF1-48D0-AE2A-F10452C36E4C}</Project>
+      <Name>EDIBZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ListBZ\ListBZ.vbproj">
+      <Project>{D06E4E94-2215-41B4-B486-D666217F71D8}</Project>
+      <Name>ListBZ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PostingBz\PostingBz.vbproj">
+      <Project>{E13B1D1E-A88A-4DE7-8F7F-CE98BA6A7E21}</Project>
+      <Name>PostingBz</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Psyquel.BusinessRules.CoreLibraryIII\Psyquel.BusinessRules.CoreLibraryIII.vbproj">
+      <Project>{C856EDBD-459B-4CD6-88EA-BEDB696C55D2}</Project>
+      <Name>Psyquel.BusinessRules.CoreLibraryIII</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

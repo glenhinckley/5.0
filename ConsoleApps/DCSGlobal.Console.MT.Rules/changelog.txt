@@ -1,0 +1,8 @@
+﻿
+
+
+
+
+
+
+3-30-2017   addded 	  _TotalRulesToFire   so the modrules know in advance how many rules to proceess

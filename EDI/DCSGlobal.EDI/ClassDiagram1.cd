@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DCSGlobal.EDI.EDIDataTables" Collapsed="true">
+    <Position X="6" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQSCQkAhCARAALAEABMIAogABRHoiQIAoGAsVMEA478=</HashCode>
+      <FileName>EDIDataTables.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.EDI.Declarations" Collapsed="true">
+    <Position X="11.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>7v1P7/7/J5/6R3r+30fY9376m873bb/QXfT1v/PfffY=</HashCode>
+      <FileName>decs.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.EDI.Import271" Collapsed="true">
+    <Position X="3.25" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>B0YAGEAnQKCQACOIYABKqAAgGqYRAAIAGCAUAAgCBAI=</HashCode>
+      <FileName>Import271.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.Import270" Collapsed="true">
+    <Position X="3.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>B0YASMAnQCAYAIOIIAAKqCAgiIIBAAAQCCAUAAgCAAI=</HashCode>
+      <FileName>Import270.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Import839" Collapsed="true">
+    <Position X="10" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Import839.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.EDI.Parse" Collapsed="true">
+    <Position X="1.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BXYAkAAVBOFABIWuQBMCCgANWKAxiRIQGHgUQoiCAIA=</HashCode>
+      <FileName>Parse.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.Import835" Collapsed="true">
+    <Position X="10" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>B0cAGECnS6CQgCuIIQhKqMBgCKIBBMAECCA0AGoSBII=</HashCode>
+      <FileName>Import835.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.Import837i" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>B0YAGOC/aaCUgSuoIQhKqMBgCIIBBEBECCA1AGoSBIY=</HashCode>
+      <FileName>Import837i.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDIFile" Collapsed="true">
+    <Position X="6.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAIoAAIKAgCAgBAASACACACAhgBA2QIHgAACNQMAA=</HashCode>
+      <FileName>EDIFile.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.Import276" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>B0aAUOC/ZaCYQCOIIQhKqOBgSIIBBUEEiGK0IioSBIY=</HashCode>
+      <FileName>Import276.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.Import277" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>B0aCmOC/ZaCY0COIMQhKqMBgSKJBAYQAiGK0ICwSBIY=</HashCode>
+      <FileName>Import277.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.Import278" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>B0aAGOC/YaCQcCOIAQhKqMDgCIIBBQEECGK0IioSBMc=</HashCode>
+      <FileName>Import278.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.Import820" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAAAAACCAAAAAAgAAAQACAEAAAAAAA=</HashCode>
+      <FileName>Import820.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

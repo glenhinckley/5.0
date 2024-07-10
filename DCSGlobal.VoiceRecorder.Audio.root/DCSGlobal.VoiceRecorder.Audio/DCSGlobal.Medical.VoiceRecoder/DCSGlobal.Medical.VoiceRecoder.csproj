@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94295414-B7B7-445A-B1E3-20B58891F53E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DCSGlobal.Medical.VoiceRecoder</RootNamespace>
+    <AssemblyName>DCSGlobal.Medical.VoiceRecoder</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\ghinckley\Desktop\test\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>BE38ED79EBC2A5B4850CA4A39935581FB176521C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>DCSGlobal.Medical.VoiceRecoder_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DCSGlobal.BusinessRules.CoreLibrary">
+      <HintPath>..\..\..\..\..\usr\controls\Core\v4\DCSGlobal.BusinessRules.CoreLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="DCSGlobal.BusinessRules.CoreLibraryII">
+      <HintPath>..\..\..\..\..\usr\controls\Core\v4\DCSGlobal.BusinessRules.CoreLibraryII.dll</HintPath>
+    </Reference>
+    <Reference Include="DCSGlobal.BusinessRules.Logging">
+      <HintPath>..\..\..\..\..\usr\controls\Core\v4\DCSGlobal.BusinessRules.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="DCSGlobal.BusinessRules.Security">
+      <HintPath>..\..\..\..\..\usr\controls\Core\v4\DCSGlobal.BusinessRules.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="GvS.Controls.HtmlTextbox">
+      <HintPath>C:\usr\controls\gvs\GvS.Controls.HtmlTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio">
+      <HintPath>..\..\..\..\..\usr\controls\NAudio\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppSettings.cs" />
+    <Compile Include="AudioPlayBack\AsioOutPlugin.cs" />
+    <Compile Include="AudioPlayBack\AsioOutSettingsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AudioPlayBack\AsioOutSettingsPanel.designer.cs">
+      <DependentUpon>AsioOutSettingsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioPlayBack\AudioPlaybackPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AudioPlayBack\AudioPlaybackPanel.designer.cs">
+      <DependentUpon>AudioPlaybackPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioPlayBack\AudioPlaybackPanelPlugin.cs" />
+    <Compile Include="AudioPlayBack\DirectSoundOutPlugin.cs" />
+    <Compile Include="AudioPlayBack\DirectSoundOutSettingsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AudioPlayBack\DirectSoundOutSettingsPanel.Designer.cs">
+      <DependentUpon>DirectSoundOutSettingsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioPlayBack\IOutputDevicePlugin.cs" />
+    <Compile Include="AudioPlayBack\WasapiOutPlugin.cs" />
+    <Compile Include="AudioPlayBack\WasapiOutSettingsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AudioPlayBack\WasapiOutSettingsPanel.designer.cs">
+      <DependentUpon>WasapiOutSettingsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudioPlayBack\WaveOutPlugin.cs" />
+    <Compile Include="AudioPlayBack\WaveOutSettingsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AudioPlayBack\WaveOutSettingsPanel.designer.cs">
+      <DependentUpon>WaveOutSettingsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListener.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListener.Designer.cs">
+      <DependentUpon>frmListener.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOptions.Designer.cs">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INAudioDemoPlugin.cs" />
+    <Compile Include="MarkerDataTable.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecordingPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RecordingPanel.designer.cs">
+      <DependentUpon>RecordingPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\srFileTransferService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\srRegister\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\srSecurity\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\srVoiceRecorder\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="Track.cs" />
+    <Compile Include="trmTestSplit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trmTestSplit.Designer.cs">
+      <DependentUpon>trmTestSplit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="utils\ReflectionHelper.cs" />
+    <EmbeddedResource Include="AudioPlayBack\AsioOutSettingsPanel.resx">
+      <DependentUpon>AsioOutSettingsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AudioPlayBack\AudioPlaybackPanel.resx">
+      <DependentUpon>AudioPlaybackPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AudioPlayBack\DirectSoundOutSettingsPanel.resx">
+      <DependentUpon>DirectSoundOutSettingsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AudioPlayBack\WasapiOutSettingsPanel.resx">
+      <DependentUpon>WasapiOutSettingsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AudioPlayBack\WaveOutSettingsPanel.resx">
+      <DependentUpon>WaveOutSettingsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListener.resx">
+      <DependentUpon>frmListener.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOptions.resx">
+      <DependentUpon>frmOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RecordingPanel.resx">
+      <DependentUpon>RecordingPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trmTestSplit.resx">
+      <DependentUpon>trmTestSplit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DCSGlobal.Medical.VoiceRecoder_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\srFileTransferService\service.wsdl" />
+    <None Include="Service References\srFileTransferService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\srFileTransferService\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\srRegister\RegisterPager.wsdl" />
+    <None Include="Service References\srSecurity\security.wsdl" />
+    <None Include="Service References\srVoiceRecorder\voiceRecorder.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\srFileTransferService\" />
+    <WCFMetadataStorage Include="Service References\srRegister\" />
+    <WCFMetadataStorage Include="Service References\srSecurity\" />
+    <WCFMetadataStorage Include="Service References\srVoiceRecorder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srVoiceRecorder\voiceRecorder.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srVoiceRecorder\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srVoiceRecorder\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srVoiceRecorder\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srFileTransferService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srFileTransferService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srFileTransferService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.resume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.rewind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.rewind.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.microphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.moon.full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.phone.hangup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.phone.voicemail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sound.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sound.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sound.2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sound.3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sound.mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.warning.circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.warning.circlred.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srSecurity\security.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srSecurity\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srSecurity\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srSecurity\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srRegister\RegisterPager.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srRegister\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srRegister\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\srRegister\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Audiosrv.png" />
+    <Content Include="Resources\Back.png" />
+    <Content Include="Resources\Forward.png" />
+    <Content Include="Resources\Loop.png" />
+    <Content Include="Resources\Mute.png" />
+    <Content Include="Resources\Open.png" />
+    <Content Include="Resources\Pause.png" />
+    <Content Include="Resources\Play.png" />
+    <Content Include="Resources\Rewind.png" />
+    <Content Include="Resources\Shuffle.png" />
+    <Content Include="Resources\Stop.png" />
+    <Content Include="Resources\Unmute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

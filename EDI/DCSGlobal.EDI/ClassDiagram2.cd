@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DCSGlobal.EDI.EDI_5010_FILE_MOVE">
+    <Position X="20.5" Y="39" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAMABICIEKQAAECAFEoECBEAEikQKAAegDQAAgCIAIA=</HashCode>
+      <FileName>COMMON_CODE\CODE\EDI_5010_FILE_MOVE.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_IMPORT">
+    <Position X="0.5" Y="39" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EAICEABAAKAQAACAMACACAAAAAAgAAQUICLAAAAAAAE=</HashCode>
+      <FileName>COMMON_CODE\CODE\EDI_5010_IMPORT.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_LOAD">
+    <Position X="6.25" Y="39" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAFABIECwAAAAAEAUECgAAAACQiAAcACBUAgCQBAE=</HashCode>
+      <FileName>COMMON_CODE\CODE\EDI_5010_LOAD.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_LoadFromDB">
+    <Position X="9" Y="39" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAoAABRARKAQBAQAEgAICAAAECAgAAQQQCBAIAAAAAA=</HashCode>
+      <FileName>COMMON_CODE\CODE\EDI_5010_LoadFromDB.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_LOGGING">
+    <Position X="3" Y="39" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAAghEQGBABQhIAAgCCABAEGAgBBAQICIAgAIQFQI=</HashCode>
+      <FileName>COMMON_CODE\CODE\EDI_5010_LOGGING.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_PARSE">
+    <Position X="11.75" Y="39" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BXYAEAAVBKBABIEuUBMCCgAMWCAxiQIQGGhUQgiCAIA=</HashCode>
+      <FileName>COMMON_CODE\CODE\EDI_5010_PARSE.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.StreamString">
+    <Position X="69.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAEAQAAAAAAAAAAAAE=</HashCode>
+      <FileName>COMMON_CODE\CODE\StreamString.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.EDI.Validate_EDI">
+    <Position X="14.5" Y="39" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ABQAAgBAQGDABQhIAAACCAAAEGCgAABQICIAgAIRAQA=</HashCode>
+      <FileName>COMMON_CODE\CODE\VALIDATE_EDI.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_270_005010X279A1">
+    <Position X="22.75" Y="49.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>M9bSD+b/Y6yQwEOsYUAMjMAotSYwERt0GOFQAEgLZhM=</HashCode>
+      <FileName>EDI\5010\IMPORTERS\EDI_5010_270_005010X279A1.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_271_005010X279A1">
+    <Position X="26" Y="51.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>M9bTDOL/Y6KQ4EOscQAMjMAotyYwERp1GOBQA0gLZgM=</HashCode>
+      <FileName>EDI\5010\IMPORTERS\EDI_5010_271_005010X279A1.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_276_005010X212">
+    <Position X="30.75" Y="49" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>u9bETAJ+RqmawIKMMcAAjOAqCqIgQAVUiCDUAloQYhM=</HashCode>
+      <FileName>EDI\5010\IMPORTERS\EDI_5010_276_005010X212.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_276_005010X212_DCS">
+    <Position X="34.75" Y="49" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>O9bGTAJuZqmawIKMMcAAjOAqCqIgUAVUiCDUAloxYhM=</HashCode>
+      <FileName>EDI\5010\IMPORTERS\EDI_5010_276_005010X212_DCS.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_277_005010X212">
+    <Position X="45" Y="48.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>utfEDGJ8BqHawYKcMQAAjIAqCKogQAVUqHDUAkwAYgM=</HashCode>
+      <FileName>EDI\5010\IMPORTERS\EDI_5010_277_005010X212.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_277_005010X212_v2">
+    <Position X="41.5" Y="48.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>utfGDGZ8BqHawYKcMQAAjIAqCKogQA1UqHDUAkwhYoM=</HashCode>
+      <FileName>EDI\5010\IMPORTERS\EDI_5010_277_005010X212_v2.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_837I_005010X223A2">
+    <Position X="68" Y="59" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>upbADOLfJSSG0AKEIQQADAAIQLUoEIBUACBVACgAYhU=</HashCode>
+      <FileName>EDI\5010\IMPORTERS\EDI_5010_837_I_005010X223A2.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_835_005010X221A1">
+    <Position X="56.75" Y="50.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>OpbKDEpaRmiCxNiMMaSALAALJEQggcJUICBRgUgl4gE=</HashCode>
+      <FileName>EDI\5010\IMPORTERS\EDI_5010_835_005010X221A1.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_277_005010X212_v2_dmg">
+    <Position X="38" Y="48.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>utfGDGZ8BqHawYKcMQAAjIAqCKogQA1UqHDUAkwhYoM=</HashCode>
+      <FileName>EDI\5010\IMPORTERS\EDI_5010_277_005010X212_v2_dmg.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_837I_005010X223A2_v2">
+    <Position X="72" Y="59" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>upbCDOLfZSSG0AKEMQQADAAIQLUoAIBUACBVAGghYhU=</HashCode>
+      <FileName>EDI\5010\IMPORTERS\EDI_5010_837_I_005010X223A2_v2.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_837P_005010X222A1">
+    <Position X="64.5" Y="59" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>upbADOLfBSSE0AKEIQQADAAAQLUoEIBUACBVACgAYhU=</HashCode>
+      <FileName>EDI\5010\IMPORTERS\EDI_5010_837_P_005010X222A1.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_837P_005010X222A1_v2">
+    <Position X="60.75" Y="59" Width="3" />
+    <TypeIdentifier>
+      <HashCode>upbCDOLfBSSG0AKEIQQADAAIQLUoEIBUACBVAGghYhU=</HashCode>
+      <FileName>EDI\5010\IMPORTERS\EDI_5010_837_P_005010X222A1_v2.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_LoadPair276_277">
+    <Position X="17.25" Y="39" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>BA6AAADCBKAQBAQIEwIqCAAIGgAoAARQQSAABgICQAA=</HashCode>
+      <FileName>EDI\5010\LOADERS\EDI_5010_LoadPair276_277.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_270_005010X279A1_TABLES">
+    <Position X="23" Y="43" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gAQEAkAAAEAQQIAAABIIBAAAAREIAQAAAAAAEAEAgIE=</HashCode>
+      <FileName>EDI\5010\TABLES\EDI_5010_270_005010X279A1_TABLES.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_COMMON_DECS">
+    <Position X="35.75" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>rxNeqBoVpXfWE5rMlJ7IEo0ZlS9fJS71He4XHPZjyI4=</HashCode>
+      <FileName>EDI\5010\DECS\EDI_5010_COMMON_DECS.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_271_005010X279A1_TABLES">
+    <Position X="26" Y="43" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AQQEQkABAAAAQqAAABIIhAIAAxEIAQAIAAAAAAGA0Lk=</HashCode>
+      <FileName>EDI\5010\TABLES\EDI_5010_271_005010X279A1_TABLES.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_276_00510X212_TABLES">
+    <Position X="33.25" Y="43" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQUAAEABACBACKAAABIIAIAABBAABQCEAAAgEAAAIAI=</HashCode>
+      <FileName>EDI\5010\TABLES\EDI_5010_276_00510X212_TABLES.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_277_00510X212_TABLES">
+    <Position X="43" Y="43" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>ABUAAEAAAABAALAAAAIIAIACBBAABQIEAAAgEAAAIAI=</HashCode>
+      <FileName>EDI\5010\TABLES\EDI_5010_277_00510X212_TABLES.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_278_00510X215_TABLES">
+    <Position X="52" Y="43" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAkAhCAAIAKAAAAIIAQAAAhGIgQAAAAAgAAEAwAg=</HashCode>
+      <FileName>EDI\5010\TABLES\EDI_5010_278_00510X215_TABLES.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_835_005010X221A1_TABLES">
+    <Position X="56" Y="43" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAxAQkAYAABAGKAAAACAGAAAARMAhWIAAAAAEAEAAIE=</HashCode>
+      <FileName>EDI\5010\TABLES\EDI_5010_835_005010X221A1_TABLES.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_837_TABLES">
+    <Position X="66.25" Y="43" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>LQSLE0BgQARKALAAABIIAAgA1jHACSIEECSyxakApR4=</HashCode>
+      <FileName>EDI\5010\TABLES\EDI_5010_837_TABLES.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_5010_COMMON_TABLES">
+    <Position X="47.25" Y="39" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAEMEABAAEAAAAAAACAAAAAABEAAAAAIQQ=</HashCode>
+      <FileName>EDI\5010\TABLES\EDI_5010_COMMON_TABLES.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDI_277_005010X212_UNIT_TEST">
+    <Position X="48.75" Y="48.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ipJAAAJIRCQAAACAAAAADAAIACAgAABUACAAAQgAYgE=</HashCode>
+      <FileName>EDI\5010\UNIT_TESTS\EDI_5010_277_005010X212_UNIT_TEST.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.AuditResponseLogging" BaseTypeListCollapsed="true">
+    <Position X="75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>gAIAABSAACAAEJAAAAACCQIAAAAgAAAQICAEABAAQAA=</HashCode>
+      <FileName>AuditResponseLogging.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.Declarations">
+    <Position X="77.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>7v3P7/7/Z5/6R3r/30fZ9376m+73bb/QXfT1v/PfffY=</HashCode>
+      <FileName>decs.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDIListBuilder" BaseTypeListCollapsed="true">
+    <Position X="82.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAAIBAECAAAAIBBAAGCBgAQGERAQAYACAAAACABAA=</HashCode>
+      <FileName>EDIListBuilder.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDIFile" BaseTypeListCollapsed="true">
+    <Position X="79.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QACQIoAAIKIgCAgAAASACACgCAhgBI2UKHwAgCNwsgA=</HashCode>
+      <FileName>EDIFile.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WriteStreamToDisc" BaseTypeListCollapsed="true">
+    <Position X="88.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAAAAAACAAAAAAgAAAQACAAAAAAAAA=</HashCode>
+      <FileName>WriteStreamToDisc.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.WriteEDIToDisk" BaseTypeListCollapsed="true">
+    <Position X="91.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAAAABACAAAAAAgAAAQgCAAAAAAAAA=</HashCode>
+      <FileName>WriteEDIToDisk.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.ValidateEDI" BaseTypeListCollapsed="true">
+    <Position X="86.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAQCIgAFQGhADIpsACAKCABgUHSEBRxRKCIEkCAQAQA=</HashCode>
+      <FileName>ValidateEDI.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.UCLA" BaseTypeListCollapsed="true">
+    <Position X="73.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAyAAACCBKAQBASIDwIqCAAIGgAIAATAQSAABgoCQAA=</HashCode>
+      <FileName>UCLA.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.StringPrep" BaseTypeListCollapsed="true">
+    <Position X="71.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAABACAAAIAAAAACDAABQACAAAAQBCAAAgAQIAA=</HashCode>
+      <FileName>StringPrep.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.SetProcessStatusFlag" BaseTypeListCollapsed="true">
+    <Position X="95.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAASAAAAAAAAAACAAgQAAgAAAACCQAAgAAgAA=</HashCode>
+      <FileName>SetProcessStatusFlag.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="1.3" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.Parse" BaseTypeListCollapsed="true">
+    <Position X="93.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BXYAkAAVBOBABIWuQBMCKgAMWKAxiRIQGHgUQoiCAIA=</HashCode>
+      <FileName>Parse.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.NoResponse" BaseTypeListCollapsed="true">
+    <Position X="67.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABRAACAAAIAAAAACCAAAAAAhAAAQACAEAgAAAAA=</HashCode>
+      <FileName>NoResponse.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.LoadFromDB" BaseTypeListCollapsed="true">
+    <Position X="66" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAoAABQARKAQBAQAAgAKCAAAECAAAASAQCAAIgAAAAA=</HashCode>
+      <FileName>LoadFromDB.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.GenerateFile" BaseTypeListCollapsed="true">
+    <Position X="63.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAUYAAAAB6AGgAAAAAADDAAgUgAgAASQiCQgBAZEhAA=</HashCode>
+      <FileName>GenerateFile.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.FilePrep" BaseTypeListCollapsed="true">
+    <Position X="61.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAKACAAAAAAADDAAAQAAAAACQACAABAIABAA=</HashCode>
+      <FileName>FilePrep.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="1.3" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.FileMove" BaseTypeListCollapsed="true">
+    <Position X="59.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEABIAIEKQAAAABBAAECBAAEmkQIAAYADAAAgCABAA=</HashCode>
+      <FileName>FileMove.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DCSGlobal.EDI.EDITA1Tables">
+    <Position X="84.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAACAAQAAAAAAAAAAAAQ=</HashCode>
+      <FileName>EDITA1Tables.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

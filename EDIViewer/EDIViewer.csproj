@@ -1,0 +1,4334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3DE8F73-2DE2-4230-BB94-8CDEE2F132E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Manual_test_app</RootNamespace>
+    <AssemblyName>Manual test app</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>136AE5DD15941EE429E317243E1EC86A70F30BE0</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Manual test app_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Manual_test_app.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClearScript">
+      <HintPath>..\packages\ClearScript.V8.5.4.7\lib\net40\ClearScript.dll</HintPath>
+    </Reference>
+    <Reference Include="ephtmltopdf">
+      <HintPath>..\..\..\..\..\..\usr\apps\lib\ephtmltopdf.dll</HintPath>
+    </Reference>
+    <Reference Include="FastColoredTextBox">
+      <HintPath>..\..\..\..\..\..\usr\apps\lib\FastColoredTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="GenCode128">
+      <HintPath>..\..\..\..\..\..\usr\apps\lib\GenCode128.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>..\..\..\..\..\..\usr\apps\lib\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCodeLib">
+      <HintPath>..\..\..\..\..\..\usr\apps\lib\QRCodeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabStrip">
+      <HintPath>..\..\..\..\..\..\usr\apps\lib\TabStrip.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Config.cs" />
+    <Compile Include="IPRanges\frmIPRangeImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IPRanges\frmIPRangeImport.Designer.cs">
+      <DependentUpon>frmIPRangeImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legacy\config.cs" />
+    <Compile Include="db\frmConnectionStrings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="db\frmConnectionStrings.Designer.cs">
+      <DependentUpon>frmConnectionStrings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEPLOYMENT\frmPackageObjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DEPLOYMENT\frmPackageObjects.Designer.cs">
+      <DependentUpon>frmPackageObjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEPLOYMENT\frmDeployPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DEPLOYMENT\frmDeployPackage.Designer.cs">
+      <DependentUpon>frmDeployPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DEPLOYMENT\frmNewPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DEPLOYMENT\frmNewPackage.Designer.cs">
+      <DependentUpon>frmNewPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDI\frmEligibilityViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDI\frmEligibilityViewer.Designer.cs">
+      <DependentUpon>frmEligibilityViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legacy\frmScratchPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legacy\frmScratchPad.Designer.cs">
+      <DependentUpon>frmScratchPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinQ\LinQPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinQ\LinQPad.Designer.cs">
+      <DependentUpon>LinQPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logs\EDLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logs\EDLogViewer.Designer.cs">
+      <DependentUpon>EDLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logs\EventLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logs\EventLog.Designer.cs">
+      <DependentUpon>EventLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDI\frmEDI5010.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EDI\frmEDI5010.Designer.cs">
+      <DependentUpon>frmEDI5010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legacy\frmVCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legacy\frmVCT.Designer.cs">
+      <DependentUpon>frmVCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logs\MLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logs\MLog.Designer.cs">
+      <DependentUpon>MLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logs\SchedulerLogViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logs\SchedulerLogViewer.Designer.cs">
+      <DependentUpon>SchedulerLogViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Monitors\frmMLOGMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monitors\frmMLOGMonitor.Designer.cs">
+      <DependentUpon>frmMLOGMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legacy\frmEDIValidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legacy\frmEDIValidate.Designer.cs">
+      <DependentUpon>frmEDIValidate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legacy\frmFileFix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legacy\frmFileFix.Designer.cs">
+      <DependentUpon>frmFileFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legacy\frmFileMove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legacy\frmFileMove.Designer.cs">
+      <DependentUpon>frmFileMove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legacy\frmFileUploadService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legacy\frmFileUploadService.Designer.cs">
+      <DependentUpon>frmFileUploadService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legacy\frmInpersonate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legacy\frmInpersonate.Designer.cs">
+      <DependentUpon>frmInpersonate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legacy\frmNPTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legacy\frmNPTest.Designer.cs">
+      <DependentUpon>frmNPTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legacy\frmRamdomNumberGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legacy\frmRamdomNumberGenerator.Designer.cs">
+      <DependentUpon>frmRamdomNumberGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legacy\frmUnitTest_AddressAPI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legacy\frmUnitTest_AddressAPI.Designer.cs">
+      <DependentUpon>frmUnitTest_AddressAPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Legacy\IDTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legacy\IDTest.Designer.cs">
+      <DependentUpon>IDTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Legacy\recrisiveserch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legacy\recrisiveserch.Designer.cs">
+      <DependentUpon>recrisiveserch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EDI\RES.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RES.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Legacy\SendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Legacy\SendEmail.Designer.cs">
+      <DependentUpon>SendEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rules\frmRulesRunRange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rules\frmRulesRunRange.Designer.cs">
+      <DependentUpon>frmRulesRunRange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rules\RuleTestCompile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rules\RuleTestCompile.Designer.cs">
+      <DependentUpon>RuleTestCompile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\LDAP\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\sr\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Settings1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ldap\LDAPWS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\ldap\LDAPWS.Designer.cs">
+      <DependentUpon>LDAPWS.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="IPRanges\frmIPRangeImport.resx">
+      <DependentUpon>frmIPRangeImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="db\frmConnectionStrings.resx">
+      <DependentUpon>frmConnectionStrings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEPLOYMENT\frmPackageObjects.resx">
+      <DependentUpon>frmPackageObjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEPLOYMENT\frmDeployPackage.resx">
+      <DependentUpon>frmDeployPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DEPLOYMENT\frmNewPackage.resx">
+      <DependentUpon>frmNewPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDI\frmEligibilityViewer.resx">
+      <DependentUpon>frmEligibilityViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legacy\frmFileUploadService.resx">
+      <DependentUpon>frmFileUploadService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legacy\frmScratchPad.resx">
+      <DependentUpon>frmScratchPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinQ\LinQPad.resx">
+      <DependentUpon>LinQPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logs\EDLogViewer.resx">
+      <DependentUpon>EDLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logs\EventLog.resx">
+      <DependentUpon>EventLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDI\frmEDI5010.resx">
+      <DependentUpon>frmEDI5010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legacy\frmVCT.resx">
+      <DependentUpon>frmVCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logs\MLog.resx">
+      <DependentUpon>MLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logs\SchedulerLogViewer.resx">
+      <DependentUpon>SchedulerLogViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monitors\frmMLOGMonitor.resx">
+      <DependentUpon>frmMLOGMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legacy\frmEDIValidate.resx">
+      <DependentUpon>frmEDIValidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legacy\frmFileFix.resx">
+      <DependentUpon>frmFileFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legacy\frmFileMove.resx">
+      <DependentUpon>frmFileMove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legacy\frmInpersonate.resx">
+      <DependentUpon>frmInpersonate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legacy\frmNPTest.resx">
+      <DependentUpon>frmNPTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legacy\frmRamdomNumberGenerator.resx">
+      <DependentUpon>frmRamdomNumberGenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legacy\frmUnitTest_AddressAPI.resx">
+      <DependentUpon>frmUnitTest_AddressAPI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legacy\IDTest.resx">
+      <DependentUpon>IDTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Legacy\recrisiveserch.resx">
+      <DependentUpon>recrisiveserch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDI\RES.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RES.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Legacy\SendEmail.resx">
+      <DependentUpon>SendEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rules\frmRulesRunRange.resx">
+      <DependentUpon>frmRulesRunRange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rules\RuleTestCompile.resx">
+      <DependentUpon>RuleTestCompile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\ldap\LDAPWS.resx">
+      <DependentUpon>LDAPWS.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Legacy\ClassDiagram1.cd" />
+    <None Include="Licenses\ClearScript.main.license" />
+    <None Include="Licenses\v8.main.license" />
+    <None Include="Licenses\v8.strongtalk.license" />
+    <None Include="Licenses\v8.v8.license" />
+    <None Include="Licenses\v8.valgrind.license" />
+    <None Include="Legacy\packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\LDAP\LDAP.wsdl" />
+    <None Include="Service References\LDAP\Manual_test_app.LDAP.AuthenticateADResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\LDAP\Manual_test_app.LDAP.AuthenticateAD_FullResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\sr\service.wsdl" />
+    <None Include="Service References\sr\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sr\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Settings1.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessRules\DCSGlobal.BusinessRules.CoreLibraryII\DCSGlobal.BusinessRules.CoreLibraryII.csproj">
+      <Project>{8bb4b9e0-687a-40ef-ac7f-9871588b4027}</Project>
+      <Name>DCSGlobal.BusinessRules.CoreLibraryII</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BusinessRules\DCSGlobal.BusinessRules.CoreLibrary\DCSGlobal.BusinessRules.CoreLibrary.vbproj">
+      <Project>{28e4d6f2-3384-4643-ab13-c4a91c8196f9}</Project>
+      <Name>DCSGlobal.BusinessRules.CoreLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BusinessRules\DCSGlobal.BusinessRules.FileTransferClient\DCSGlobal.BusinessRules.FileTransferClient.csproj">
+      <Project>{6e978ac2-2ce7-4d38-9587-8d1022ac4086}</Project>
+      <Name>DCSGlobal.BusinessRules.FileTransferClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BusinessRules\DCSGlobal.BusinessRules.Logging\DCSGlobal.BusinessRules.Logging.csproj">
+      <Project>{b92abeb7-771f-476b-8a50-fca541895f23}</Project>
+      <Name>DCSGlobal.BusinessRules.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BusinessRules\DCSGlobal.BusinessRules.Security\DCSGlobal.BusinessRules.Security.csproj">
+      <Project>{19c0a0ca-77a2-4922-9da5-fc6c40a0ce09}</Project>
+      <Name>DCSGlobal.BusinessRules.Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DCSGlobal.BusinessRules.db\DCSGlobal.BusinessRules.db.csproj">
+      <Project>{15b7368d-6f67-46ee-8764-5f553138b3fb}</Project>
+      <Name>DCSGlobal.BusinessRules.db</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EDI\DCSGlobal.EDI.Comunications\DCSGlobal.EDI.Comunications.csproj">
+      <Project>{63fda178-f4e1-4cc1-b1c6-d63a729380b1}</Project>
+      <Name>DCSGlobal.EDI.Comunications</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\EDI\DCSGlobal.EDI\DCSGlobal.EDI.vbproj">
+      <Project>{e78205b5-708c-4b04-9326-f7d715b25a23}</Project>
+      <Name>DCSGlobal.EDI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Eligibility\DCSGlobal.Eligibility.Control\DCSGlobal.Eligibility.Control.csproj">
+      <Project>{df084650-e34d-4efe-af8f-bb39ffb35f40}</Project>
+      <Name>DCSGlobal.Eligibility.Control</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Eligibility\DCSGlobal.Eligibility.ProcessEligibility\DCSGlobal.Eligibility.ProcessEligibility.vbproj">
+      <Project>{ab5859a7-3f31-4282-9eb8-b5ee9e6f6e0a}</Project>
+      <Name>DCSGlobal.Eligibility.ProcessEligibility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Rules\DCSGlobal.Rules.DLLBuilder\DCSGlobal.Rules.DLLBuilder.csproj">
+      <Project>{e884068f-d883-46c6-99db-1a970b2183c7}</Project>
+      <Name>DCSGlobal.Rules.DLLBuilder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Rules\DCSGlobal.Rules\DCSGlobal.Rules.vbproj">
+      <Project>{8d62313d-50ea-4b1d-b4cb-e7a6f948ab02}</Project>
+      <Name>DCSGlobal.Rules</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\LDAP\" />
+    <WCFMetadataStorage Include="Service References\sr\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\sr\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\sr\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\sr\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RegEX\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.acorn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.add.multiple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.acrobat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.aftereffects.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.audition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.bridge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.dreamweaver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.encore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.fireworks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.flash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.flashbuilder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.illustrator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.indesign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.lightroom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.photoshop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.prelude.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.premierpro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.adobe.speedgrade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.alien.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.align.center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.align.justify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.align.left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.align.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.anchor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.app.favorite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.app.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.app.plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.app.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.app.remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.arcade.button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.archive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.arrow.collapsed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.arrow.corner.up.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.arrow.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.arrow.down.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.arrow.expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.arrow.left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.arrow.left.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.arrow.right.left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.arrow.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.arrow.up.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.arrow.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.at.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.axis.three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.axis.x.letter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.axis.x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.axis.xy.parentheses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.axis.xy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.axis.y.letter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.axis.y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.axis.yx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.axis.z.letter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.axis.z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.baby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.barcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.base.select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.bath.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.battery.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.battery.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.battery.2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.battery.3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.battery.charging.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.bed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.beer.guinness.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.beer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.bike.parking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.bike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.billboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.billing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.bing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.book.contact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.book.hardcover.open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.book.hardcover.open.writing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.book.list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.book.open.information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.book.open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.book.open.text.image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.book.open.text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.book.perspective.help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.book.perspective.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.book.side.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.border.all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.border.bottom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.border.horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.border.inner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.border.left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.border.none.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.border.outside.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.border.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.border.top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.border.vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.box.layered.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.box.unfolded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.brick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.browser.chrome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.browser.ie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.browser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.browser.wire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.bug.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.bug.remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cabinet.files.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cabinet.files.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cabinet.in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cabinet.out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cabinet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cabinet.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.calendar.14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.calendar.31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.calendar.day.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.calendar.dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.calendar.future.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.calendar.month.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.calendar.range.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.calendar.tomorrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.calendar.week.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.calendar.year.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.camera.auto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.camera.flash.auto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.camera.flash.auto.selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.camera.flash.off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.camera.flash.off.selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.camera.flash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.camera.flash.selected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.camera.send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.camera.switch.invert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.camera.switch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.candle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.candy.cane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.card.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.card.2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.card.3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.card.4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.card.5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.card.6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.card.7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.card.8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.card.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cards.club.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cards.diamond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cards.heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cards.spade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cd.eject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cell.align.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cell.column.delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cell.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cell.function.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cell.insert.above.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cell.insert.below.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cell.merge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cell.row.delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cell.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.centerline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.checkmark.cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.checkmark.pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.checkmark.pencil.top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.checkmark.thick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.checkmark.thick.unchecked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.checkmark.uncrossed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.chess.bishop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.chess.horse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.chess.king.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.chess.pawn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.chess.queen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.chess.rook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.chevron.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.chevron.left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.chevron.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.chevron.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.chromakey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.church.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.circle.decline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.circle.growth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.city.chicago.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.city.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.city.sanfrancisco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.city.seattle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clear.inverse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clear.inverse.reflect.horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clear.reflect.horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clipboard.paper.check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clipboard.paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clipboard.paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clipboard.variant.edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clipboard.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clipboard.variant.text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.closedcaption.off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.closedcaption.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clothes.shirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.clothes.tie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cloud.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cloud.delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cloud.download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cloud.pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cloud.play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cloud.upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cloudirc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.code.xml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cogs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.column.one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.column.three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.column.two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.companioncube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cone.diagonal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.confirm.yes.no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.connect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.connection.1x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.connection.3g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.connection.4g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.connection.bluetooth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.connection.ev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.connection.quality.extremelylow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.connection.quality.high.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.connection.quality.low.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.connection.quality.medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.connection.quality.veryhigh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.connection.quality.verylow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.connection.wifi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.connection.wifi.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.console.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.contrast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.eject.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.fastforward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.fastforward.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.guide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.play.live.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.resume.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.rewind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.rewind.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.control.stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.controller.snes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.controller.xbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.copyright.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.corner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.coupon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.creativecommons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.creditcard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.crop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.crosshair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.crown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cup.empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cup.full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cup.half.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cup.paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cupcake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.currency.cent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.currency.dollar.free.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.currency.dollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.currency.euro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.currency.grivna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.currency.pound.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.currency.rubles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.currency.rupee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.currency.yen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cursor.default.outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cursor.default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cursor.default.transform.horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cursor.hand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cursor.information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cursor.move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.cusor.pointer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.customerservice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.database.mysql.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.database.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.database.sql.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.debug.restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.debug.step.into.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.debug.step.out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.debug.step.over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.debug.stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.deeplink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.deeplink.round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.devcenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.diagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dimension.arrow.box.height.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dimension.arrow.box.width.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dimension.arrow.line.height.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dimension.arrow.line.height.short.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dimension.arrow.line.height.thick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dimension.arrow.line.width.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dimension.arrow.line.width.short.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dimension.arrow.line.width.thick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dimension.box.height.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dimension.box.width.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dimension.line.height.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dimension.line.height.short.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dimension.line.width.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dimension.line.width.short.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.directions.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.disconnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.disk.download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.disk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dnd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.door.enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.door.leave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.door.lock.closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.door.lock.open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.drafting.centerline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.draw.brush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.draw.brush.reflection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.draw.button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.draw.marker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.draw.marker.reflection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.draw.paintbrush.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.draw.pen.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.draw.pen.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.draw.pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.draw.pen.reflection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.draw.pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.draw.pencil.reflection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.draw.pixel.fill.grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.draw.pixel.grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.dropper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.edit.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.edit.box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.edit.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.elevator.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.elevator.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.email.gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.email.hardedge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.email.minimal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.email.outlook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.email.yahoo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.eye.hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.facebook.connect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.facebook.disconnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.fan.box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.ferry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.film.live.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.film.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.film.select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.filter.alphabetical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.finder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.fingerprint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.flag.bear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.flag.texas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.flag.wavy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.folder.ellipsis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.folder.lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.folder.open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.folder.people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.folder.puzzle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.folder.star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.food.apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.food.silverware.cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.food.silverware.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.foot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.forklift.load.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.forklift.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.form.basic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.form.editable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.forrst.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.forsale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.framework.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.fullscreen.box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.fullscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.futurama.bender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.futurama.fry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.gas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.gauge.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.gauge.25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.gauge.50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.gauge.75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.gauge.100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.gender.both.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.gender.female.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.gender.male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.gift.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.globe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.globe.wire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.googleplus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.grade.a.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.grade.a.plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.grade.a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.grade.b.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.grade.b.plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.grade.b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.grade.c.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.grade.c.plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.grade.c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.grade.d.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.grade.d.plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.grade.d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.grade.e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.grade.f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.graph.bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.graph.boxplot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.graph.histogram.description.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.graph.histogram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.graph.line.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.graph.line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.graph.line.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.greek.sigma.lowercase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.greek.sigma.uppercase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.group.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.group.delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.group.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.handicap.in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.handicap.out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.handicap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.hardware.cpu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.hardware.headphones.bluetooth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.hardware.headphones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.hardware.headset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.hardware.mouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.hat.santa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.heart.break.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.heart.cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.heart.outline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.garage.arrow.close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.garage.arrow.open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.garage.open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.garage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.gps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.location.pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.location.round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.people.none.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.variant.enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.variant.leave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.home.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.hourglass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.icecream.bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.ie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.ants.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.backlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.beach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.broken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.focus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.gallery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.hdr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.landscape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.macro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.multiple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.night.landscape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.night.person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.night.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.night.portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.portrait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.redeye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.snow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.sports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.image.sunset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.inbox.in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.inbox.out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.inbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.infinite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.information.circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.input.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.input.keyboard.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.input.keyboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.input.pen.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.input.pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.input.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.input.question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.interface.button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.interface.dropdown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.interface.list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.interface.password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.interface.textbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.iphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.journal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.key.old.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.lamp.desk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.lamp.desk.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.lamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.lamp.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.language.csharp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.language.java.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.language.java.text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.language.python.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.language.python.text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.laptop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.lavalamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.arrange.bringforward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.arrange.bringtofront.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.arrange.sendbackward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.arrange.sendtoback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.arrange.solid.bringforward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.arrange.solid.bringtofront.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.arrange.solid.sendbackward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.arrange.solid.sendtoback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.perspective.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.thick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layer.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layout.body.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layout.collapse.left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layout.collapse.left.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layout.collapse.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layout.collapse.right.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layout.expand.left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layout.expand.left.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layout.expand.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layout.expand.right.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layout.header.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.layout.sidebar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.leaderboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.lifesaver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.lightbulb.coil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.lightbulb.hue.on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.lightbulb.hue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.lightbulb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.lightning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.lines.horizontal.4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.link.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.linkedin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.add.above.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.add.below.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.delete.inline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.hidden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.merge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.reorder.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.reorder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.reorder.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.list.two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.location.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.location.checkin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.location.circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.location.delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.location.foursquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.location.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.location.round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.logic.and.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.logic.and.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.logic.or.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.logic.or.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.loop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.magnify.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.magnify.arrow.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.magnify.arrow.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.magnify.back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.magnify.browse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.magnify.forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.magnify.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.magnify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.man.sensor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.man.suitcase.fast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.man.suitcase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.man.suitcase.run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.man.walk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.map.aerial.highway.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.map.aerial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.map.folds.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.map.gps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.map.location.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.map.location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.map.satellite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.map.treasure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.marketplace.old.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.marketplace.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.markup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.martini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.marvel.avengers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.marvel.captainamerica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.marvel.ironman.mask.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.marvel.ironman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.marvel.shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.marvel.shield.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.math.plus.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.measure.celcius.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.measure.centimeter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.measure.farenheit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.measure.foot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.measure.inch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.measure.kilometer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.measure.meter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.measure.mile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.medical.pill.broken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.medical.pill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.medical.pulse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.message.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.message.profanity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.message.send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.message.smiley.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.microphone.google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.microphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.microsoft.tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.minecraft.civcraft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.monitor.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.monitor.delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.monitor.film.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.monitor.identify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.monitor.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.monitor.play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.monitor.to.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.mono.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.moon.first.quarter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.moon.full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.moon.new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.moon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.moon.sleep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.moon.third.quarter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.moon.waning.crescent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.moon.waning.gibbous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.moon.waxing.crescent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.moon.waxing.gibbous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.movie.clapper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.movie.clapper.select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.movie.clapper.solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.movie.clapper.solid.select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.music.live.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.music.select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.music.wifi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.na.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.navigate.next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.navigate.previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.network.disconnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.network.home.disconnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.network.home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.network.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.network.port.disconnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.network.port.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.network.server.connecting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.network.server.disconnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.network.server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.new.window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.newspaper.create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.newspaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.nfc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.noentry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.notification.above.multiple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.notification.above.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.notification.multiple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.notification.star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.nyan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.office.365.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.office.access.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.office.excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.office.infopath.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.office.lync.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.office.onenote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.office.outlook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.office.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.office.powerpoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.office.project.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.office.publisher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.office.sharepoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.office.visio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.office.word.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.opacity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.ornament.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.ornament.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.os.android.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.os.arm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.os.blackberry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.os.chromium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.os.gnome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.os.ios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.os.ubuntu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.os.windows.8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.os.windows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.os.windows.rt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.os.windowsphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.os.windowsphone.round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.os.x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.os.x86.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.outlet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.break.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.corner.bookmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.corner.break.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.corner.cells.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.corner.folded.grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.corner.folded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.corner.folded.text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.corner.grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.corner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.corner.text.break.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.corner.text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.duplicate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.file.gif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.file.gif.tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.file.pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.file.pdf.tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.heartbreak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.hidden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.jpg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.location.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.multiple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.onenote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.powerpoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.solid.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.solid.cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.solid.move.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.word.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.page.xml.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.palmtree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.palmtree.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.paper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.paperclip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.paperclip.rotated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.paw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.paypal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.people.arrow.left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.people.arrow.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.people.checkbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.people.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.people.left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.people.magnify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.people.multiple.magnify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.people.multiple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.people.profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.people.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.people.sensor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.people.sensor.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.people.status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.people.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.percent.off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.phone.hangup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.phone.voicemail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.pie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.pie.quarter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.pin.remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.places.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.plane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.plane.rotated.45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.plane.rotated.135.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.plant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.pokeball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.potion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.present.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.printer.blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.printer.text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.progress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.projector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.projector.screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.protractor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.puzzle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.puzzle.round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.qr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.quill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.quote.left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.quote.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.radar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.radar.screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.radioactive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.redo.curve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.redo.point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.refresh.clockwise.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.refresh.clockwise.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.refresh.counterclockwise.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.refresh.counterclockwise.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.religion.christianity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.religion.islamic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.religion.judaism.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.repeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.reply.calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.reply.email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.reply.people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.reset.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.resource.group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.resource.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.ribbon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.ribbon.wave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.ring.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.rocket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.rocket.rotated.45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.rss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.ruler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sailboat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scale.unbalanced.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scissor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.h.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.j.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.k.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.l.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.o.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.q.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.u.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.v.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.w.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.scrabble.z.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sd.micro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.section.collapse.all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.section.collapse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.section.expand.all.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.section.expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.share.open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.share.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.shield.alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.shield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.shopping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.shotglass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.shuffle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sidebar.left.collapse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sidebar.left.expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sidebar.right.collapse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sidebar.right.expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sign.caution.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sign.interstate.75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sign.interstate.94.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sign.interstate.95.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sign.interstate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sign.parking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sign.stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.simcard.micro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.simcard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.skydrive.download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.skydrive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.skydrive.upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sleep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.slice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.smiley.angry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.smiley.cry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.smiley.frown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.smiley.glasses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.smiley.grin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.smiley.grumpy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.smiley.happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.smiley.kiki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.smiley.squint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.smiley.tounge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.smiley.what.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.snowflake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.snowman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.aim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.aim.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.amazon.appstore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.amazon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.apple.appstore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.apple.mobileme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.appnet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.artcom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.arto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.aws.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.baidu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.basecamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.bebo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.behance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.blogger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.cloudapp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.coding4fun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.delicious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.deviantart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.digg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.digg.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.disqus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.dribbble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.dropbox.download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.dropbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.dropbox.upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.drupal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.engadget.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.etsy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.evernote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.facebook.heart.break.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.facebook.heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.facebook.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.foursquare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.gdgt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.github.octocat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.github.octocat.solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.github.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.grooveshark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.indiegogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.jira.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.kickstarter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.lastfm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.linkedin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.linkedin.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.microsoft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.nuget.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.openid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.picasa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.pinterest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.playstation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.rdio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.reddit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.sharethis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.skype.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.slashdot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.soundcloud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.spotify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.stackoverflow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.theverge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.trello.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.tumblr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.twitter.hashtag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.twitter.retweet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.unity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.untapped.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.uservoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.vimeo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.wikipedia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.wordpress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.wordpress.variant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.xing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.yahoo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.ycombinator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.yelp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.social.zappos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sort.alphabetical.ascending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sort.alphabetical.descending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sort.alphabetical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sort.numeric.ascending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sort.numeric.descending.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sort.numeric.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sound.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sound.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sound.2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sound.3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sound.left.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sound.mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sound.stereo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sound.stereo.stack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.source.fork.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.source.pull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.speakerphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.sport.football.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.stairs.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.stairs.down.reflect.horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.stairs.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.stairs.up.reflect.horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.stamp.at.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.stamp.empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.stamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.star.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.star.delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.star.invincible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.star.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.star.remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.starwars.jedi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.starwars.rebel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.starwars.sith.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.steam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.stock.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.stock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.stock.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.stocking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.store.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.stream.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.suitcase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.swap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.switch.off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.symbol.braces.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.symbol.bracket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.table.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.table.delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.table.select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.table.unselect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tablet.windows.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tag.label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tardis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.align.center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.align.justify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.align.left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.align.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.overline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.sans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.script.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.serif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.size.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.size.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.size.plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.size.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.size.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.strikethrough.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.text.underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.thermometer.celcius.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.thermometer.digital.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.thermometer.fahrenheit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.thermometer.honeywell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.thermometer.kelvin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.thermometer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.thermometer.signs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.thumb.up.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.thumb.up.delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.thumb.up.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.thumbs.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.thumbs.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tiles.four.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tiles.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tiles.nine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tiles.plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tiles.sixteen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.timer.1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.timer.2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.timer.3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.timer.4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.timer.5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.timer.alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.timer.check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.timer.forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.timer.pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.timer.play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.timer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.timer.record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.timer.rewind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.timer.stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tournament.bracket.down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tournament.bracket.left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tournament.bracket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tournament.bracket.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tournament.bracket.up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tower.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.train.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.train.track.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.train.tunnel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transform.flip.horizontal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transform.flip.vertical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transform.rotate.clockwise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transform.rotate.counterclockwise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transform.rotate.left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transform.rotate.right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transit.arrive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transit.bus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transit.car.accident.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transit.car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transit.congestion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transit.connection.departure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transit.connection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transit.construction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transit.depart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transit.distance.from.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transit.distance.to.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.transit.hazard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tree.leaf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tree.leaf.three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tree.pine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.trophy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tux.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tv.news.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tv.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tv.remote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.tv.syfy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.type.bit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.type.boolean.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.type.null.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.undo.curve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.undo.point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.unlock.keyhole.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.usb.drive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.usb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.user.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.user.delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.user.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.user.tie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.vector.circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.vector.group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.vector.group.removed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.vector.line.curve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.vector.line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.vector.line.spline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.vector.pen.add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.vector.pen.convert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.vector.pen.minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.vector.pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.vector.polygon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.vector.rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.vector.star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.video.basic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.video.gallery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.video.highdefinition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.video.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.video.send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.video.standarddefinition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.vip.lowercase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.vip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.visualstudio.news.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.visualstudio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.warning.circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.water.droplet.alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.water.droplet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.water.droplet.reflection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.weather.chance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.weather.overcast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.weather.rain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.weather.snow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.weather.station.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.weather.sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.weather.sun.rise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.weather.sun.set.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.weather.symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.weather.thunder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.webcam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.window.casement.closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.window.casement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.window.closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.window.maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.window.minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.window.restore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.window.simple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.windowsphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.xbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.youtube.play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.youtube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appbar.zune.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\LDAP\LDAP.disco" />
+    <None Include="Service References\LDAP\configuration91.svcinfo" />
+    <None Include="Service References\LDAP\configuration.svcinfo" />
+    <None Include="Service References\LDAP\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="Tools\ldap\ep.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

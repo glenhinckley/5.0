@@ -1,0 +1,30 @@
+﻿
+   09-26-2016 15:34 Glen
+	replaced the converted from VB to C# availity code to the refernce stadard from the documention
+
+   09-26-2016 13:00 Glen
+   memoved the fall back to hard coded 
+
+    09-26-2016 12:00 Glen
+	rmoved execces loging when the vendor cal failes
+	fixed code so that a bht03 mismatch will not be loged if vendor failed
+
+	09-26-2016 1100 Glen
+	added code to suprese validation if get res is not a cucces and the ISA <109 condetions or not met
+	added the timespan ticks to dodrode loging in case of failure
+
+	 09-22-2016 1700 glen
+	 line 1163
+	 added if to check for MEDDATA as BHT03 check failes
+	             if (VendorName != "MEDDATA")
+            {
+                if (B_RES != B_REQ)
+                {
+                    log.ExceptionDetails("bht misr match", Convert.ToString(_TaskID) + "|" + Convert.ToString(VendorName) + "|" + Convert.ToString(_RES));
+
+
+                    r = -1;
+
+
+                }
+            }

@@ -1,0 +1,17 @@
+﻿
+
+
+
+
+
+
+3-30-2017   addded 	_TotalRulesToFire   so the modrules know in advance how many rules to proceess
+					added code to the get tankbyid to handle no tank rows
+					add code so that on no rules it will build tank
+					added code so that when Run_rules or Run_avs is null is forced to N	
+					addec doe so that if RUNRULES is N it will get out and clean up
+
+					1 . if  usp_get_all_data_tank_ByID retruns 0 rows call usp_rules_non_processed_rows with ID and sPatHospitalCode get out i am done
+ 					2. if usp_get_all_data_tank_ByID returns rows but there are no rules write the dummy rule and get out
+ 					3. if run_rules ='N' get out and do nothing
+ 

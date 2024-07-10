@@ -1,0 +1,44 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Core="clr-namespace:DCSGlobal.VoiceRecorder.Core;assembly=DCSGlobal.VoiceRecorder.Core" x:Class="DCSGlobal.Recorder.MainWindow"
+        Title="DCS Global Recoder " Height="575" Width="800" Background="#FF1B1B1C">
+    <Grid Background="White" Margin="0,0,0,0">
+        <Core:PolygonWaveFormControl HorizontalAlignment="Left" Height="100" Margin="10,153,0,0" VerticalAlignment="Top" Width="691" BorderThickness="1"/>
+        <ProgressBar HorizontalAlignment="Left" Height="10" Margin="713,195,-21,0" VerticalAlignment="Top" Width="100" Orientation="Vertical" RenderTransformOrigin="0.5,0.5">
+            <ProgressBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ProgressBar.RenderTransform>
+        </ProgressBar>
+        <Button x:Name="cmdAddMarker" Content="Add Marker" HorizontalAlignment="Left" Margin="692,263,0,0" VerticalAlignment="Top" Width="75" Click="cmdAddMarker_Click"/>
+        <Label x:Name="lblAccountNumber1" Content="Account Number:" HorizontalAlignment="Left" Margin="16,263,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDetail" Content="Detail:" HorizontalAlignment="Left" Margin="17,360,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNote" HorizontalAlignment="Left" Height="124" Margin="19,380,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="748"/>
+        <Label x:Name="lblSubject" Content="Subject:" HorizontalAlignment="Left" Margin="16,310,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbSubject" HorizontalAlignment="Left" Margin="19,334,0,0" VerticalAlignment="Top" Width="748"/>
+        <TextBox x:Name="txtAccountNumber" HorizontalAlignment="Left" Height="23" Margin="19,286,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtMRN" HorizontalAlignment="Left" Height="23" Margin="157,286,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtDOR" HorizontalAlignment="Left" Height="23" Margin="296,286,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblMRN" Content="MRN:" HorizontalAlignment="Left" Margin="157,265,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblAccountNumber" Content="DOR:" HorizontalAlignment="Left" Margin="296,263,0,0" VerticalAlignment="Top"/>
+        <Label Content="Label" HorizontalAlignment="Left" Margin="22,508,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.333,0.391"/>
+        <Button x:Name="cmdStart" Content="Start" HorizontalAlignment="Left" Margin="607,115,0,0" VerticalAlignment="Top" Width="75" Click="cmdStart_Click"/>
+        <Button x:Name="cmdFinish" Content="Finish" HorizontalAlignment="Left" Margin="691,115,0,0" VerticalAlignment="Top" Width="75" Click="cmdFinish_Click"/>
+        <Label x:Name="lblContactFirstName" Content="Contact First Name:" HorizontalAlignment="Left" Margin="16,45,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtContactFirstName" HorizontalAlignment="Left" Height="23" Margin="19,68,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtContactLastName" HorizontalAlignment="Left" Height="23" Margin="157,68,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtDOR_Copy" HorizontalAlignment="Left" Height="23" Margin="18,115,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="324"/>
+        <Label x:Name="lblContactLastName" Content="Contact Last Name:" HorizontalAlignment="Left" Margin="157,47,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblContactPhoneNumber" Content="Contact Phone Number:" HorizontalAlignment="Left" Margin="296,45,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblContactEmail" Content="Contact Email:" HorizontalAlignment="Left" Margin="18,92,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtContactPhoneNumber" HorizontalAlignment="Left" Height="23" Margin="302,66,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+
+
+    </Grid>
+</Window>
